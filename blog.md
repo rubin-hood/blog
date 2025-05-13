@@ -4,5 +4,5 @@ title:
 permalink: /blog/
 ---
 
-# {{ page.title }}
+{{ page.title }}
 
