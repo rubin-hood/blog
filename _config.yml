@@ -2,3 +2,11 @@ baseurl: "/blog"
 title: "Mein Projekt"
 description: "Eine statische Website mit Jekyll & GitHub Pages"
 theme: minima
+
+plugins:
+  - jekyll-feed
+# Hier kommt dein eigenes Stylesheet
+sass:
+  style: compressed
+include:
+  - assets/css/main.scss
