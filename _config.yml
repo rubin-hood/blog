@@ -9,7 +9,7 @@ plugins:
 sass:
   style: compressed
 include:
-  - assets/css/main.scss
+  - css/style.scss
 
 minima:
   navigation:
