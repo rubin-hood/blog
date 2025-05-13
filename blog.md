@@ -1,5 +1,5 @@
 ---
-layout: home       # oder: home, wenn dein Theme das unterstützt
+layout: home        # Minima hat ein „home“-Layout, das site.posts rendert
 title: Blog
 permalink: /blog/
 ---
