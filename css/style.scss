@@ -9,7 +9,7 @@ header.site-header {
   background-color: #F6F5F1;
 }
 
-// Basis-Navigation
+// Linkfarben
 .site-nav a {
   color: #009C6C;
   text-decoration: none;
@@ -20,7 +20,7 @@ header.site-header {
   color: #AA061F;
 }
 
-// Responsive Navigation (Hamburger-Menü)
+// Hamburger-Schalter
 .nav-toggle {
   display: none;
 }
@@ -33,6 +33,7 @@ header.site-header {
   user-select: none;
 }
 
+// Navigation normal (Desktop)
 .nav-menu {
   display: flex;
   list-style: none;
@@ -45,21 +46,33 @@ header.site-header {
   display: inline;
 }
 
+// Responsive Navigation
 @media (max-width: 768px) {
-  .nav-toggle-label {
-    display: block;
-  }
-
   .nav-menu {
     display: none;
     flex-direction: column;
-    background: white;
     position: absolute;
-    top: 60px;
-    right: 10px;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    z-index: 1000;
+    top: 3.5rem;
+    right: 1rem;
+    background: #fefefe;
+    padding: 1rem 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu li {
+    margin: 0.5rem 0;
+    list-style: none;
+    text-align: right;
+  }
+
+  .nav-toggle-label {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001;
   }
 
   .nav-toggle:checked + .nav-toggle-label + .site-nav .nav-menu {
