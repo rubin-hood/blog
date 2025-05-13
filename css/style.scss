@@ -55,18 +55,24 @@ header.site-header {
     display: block;
   }
 
+  /* Site-Nav standardmäßig einklappen */
+  .site-nav {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+  }
+
+  /* Wenn das Toggle aktiviert ist: Site-Nav ausklappen */
+  .nav-toggle:checked + .nav-toggle-label + .site-nav {
+    max-height: 500px; /* je nach Menüinhalt ggf. anpassen */
+  }
+
   .nav-menu {
-    display: none;
     flex-direction: column;
     gap: 0.75rem;
     margin-top: 1rem;
   }
 
-  .nav-toggle:checked + .nav-toggle-label + .site-nav .nav-menu {
-    display: flex;
-  }
-
-  // Optional für etwas Einrückung/Mobilgefühl
   .nav-menu li {
     padding-left: 1rem;
   }
