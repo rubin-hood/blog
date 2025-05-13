@@ -5,8 +5,26 @@ theme: minima
 
 plugins:
   - jekyll-feed
-# Hier kommt dein eigenes Stylesheet
+
 sass:
   style: compressed
 include:
   - assets/css/main.scss
+
+minima:
+  navigation:
+    - title: "Home"
+      url: "/"
+    - title: "Blog"
+      url: "/blog/"
+    - title: "About"
+      url: "/about/"
+    - title: "My Projects"
+      url: "/projects/"
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
