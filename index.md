@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: "Willkommen auf meiner Jekyll-Site"
 ---
 
