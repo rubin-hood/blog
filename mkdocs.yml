@@ -1,26 +1,13 @@
-name: Deploy MkDocs
-
-on:
-  push:
-    branches: [main]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-
-      - name: Install dependencies
-        run: |
-          pip install mkdocs
-
-      - name: Deploy to GitHub Pages
-        run: |
-          mkdocs gh-deploy --force
+site_name: Mein Blog
+docs_dir: .
+nav:
+  - Startseite: index.md
+  - Über: about.md
+  - Blog: blog.md
+  - Beiträge:
+      - Beitrag 1: posts/beitrag1.md
+      - Beitrag 2: posts/beitrag2.md
+theme:
+  name: readthedocs
+plugins:
+  - search
