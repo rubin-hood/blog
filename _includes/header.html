@@ -1,13 +1,12 @@
-<header class="site-header" role="banner">
-  <div class="wrapper">
-    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      {% if site.minima.navigation %}
-        {% for item in site.minima.navigation %}
-          <a class="page-link{% if page.url == item.url %} current{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-        {% endfor %}
-      {% endif %}
-    </nav>
-  </div>
-</header>
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    {% include header.html %}
+    {{ content }}
+  </body>
+</html>
