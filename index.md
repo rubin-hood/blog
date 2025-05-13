@@ -1,8 +1,8 @@
 ---
-layout: home
-title: Willkommen!
+layout: default
+title: "Willkommen auf meiner Jekyll-Site"
 ---
 
-[→ Zum Blog](blog.md)
+# Hallo Welt!
 
-Hallo, das ist meine erste Jekyll-Webseite auf GitHub Pages.
+Das ist meine erste statische Seite mit Jekyll direkt auf GitHub Pages.
