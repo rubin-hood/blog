@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Willkommen auf meiner Jekyll-Site"
+title: ""
 ---
 
 # Hallo Welt!
