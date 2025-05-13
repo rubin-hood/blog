@@ -1,5 +1,5 @@
 ---
-layout: default       # oder: home, wenn dein Theme das unterstützt
+layout: home       # oder: home, wenn dein Theme das unterstützt
 title: Blog
 permalink: /blog/
 ---
