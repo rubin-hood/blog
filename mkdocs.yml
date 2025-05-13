@@ -2,3 +2,6 @@ site_name: Meine Doku
 nav:
   - Start: index.md
   - Über: about.md
+
+theme:
+  name: readthedocs
