@@ -1,0 +1,21 @@
+---
+# Front Matter – damit Jekyll die Datei verarbeitet
+---
+// Importiere zuerst das Minima-Stylesheet
+@import "minima";
+
+// Dann deine eigenen Styles
+header.site-header {
+  background-color: #F6F5F1;  /* Hintergrundfarbe der gesamten Header-Leiste */
+}
+
+/* Alle Links in der Hauptnavigation */
+.site-nav a {
+  color: #009C6C;            /* normale Link-Farbe */
+}
+
+/* Aktives bzw. markiertes Item */
+.site-nav .current a,
+.site-nav a:hover {
+  color: #AA061F;            /* Hover- und Active-Farbe */
+}
