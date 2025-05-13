@@ -1,3 +1,4 @@
+baseurl: "/blog"
 title: "Mein Projekt"
 description: "Eine statische Website mit Jekyll & GitHub Pages"
 theme: minima
