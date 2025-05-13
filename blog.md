@@ -1,10 +1,16 @@
 ---
-layout: minima
+layout: default       # oder: home, wenn dein Theme das unterstützt
 title: Blog
+permalink: /blog/
 ---
 
-# Blog
+# {{ page.title }}
 
-{% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }}) – {{ post.date | date: "%d.%m.%Y" }}
-{% endfor %}
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      – {{ post.date | date: "%Y-%m-%d" }}
+    </li>
+  {% endfor %}
+</ul>
