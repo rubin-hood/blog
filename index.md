@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Startseite
+layout: home
+title: Willkommen!
 ---
 
-Willkommen auf meinem Blog!
+Hallo, das ist meine erste Jekyll-Webseite auf GitHub Pages.
