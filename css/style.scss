@@ -4,9 +4,10 @@
 
 @import "minima";
 
-// Header-Hintergrund
+// Header-Styling
 header.site-header {
   background-color: #F6F5F1;
+  padding: 1rem 0;
 }
 
 // Linkfarben
@@ -20,62 +21,53 @@ header.site-header {
   color: #AA061F;
 }
 
-// Hamburger-Schalter
+// Hamburger-Grundlogik
 .nav-toggle {
   display: none;
 }
 
 .nav-toggle-label {
   display: none;
-  font-size: 2rem;
+  font-size: 1.75rem;
   cursor: pointer;
-  padding: 0.5rem;
   user-select: none;
+  padding: 0.5rem;
+  float: right;
 }
 
-// Navigation normal (Desktop)
+// Navigation standard (Desktop)
 .nav-menu {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
   gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
 }
 
 .nav-menu li {
   display: inline;
 }
 
-// Responsive Navigation
+// Responsive Verhalten
 @media (max-width: 768px) {
+  .nav-toggle-label {
+    display: block;
+  }
+
   .nav-menu {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 3.5rem;
-    right: 1rem;
-    background: #fefefe;
-    padding: 1rem 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-menu li {
-    margin: 0.5rem 0;
-    list-style: none;
-    text-align: right;
-  }
-
-  .nav-toggle-label {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1001;
+    gap: 0.75rem;
+    margin-top: 1rem;
   }
 
   .nav-toggle:checked + .nav-toggle-label + .site-nav .nav-menu {
     display: flex;
+  }
+
+  // Optional für etwas Einrückung/Mobilgefühl
+  .nav-menu li {
+    padding-left: 1rem;
   }
 }
