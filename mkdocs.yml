@@ -1,7 +1,13 @@
-site_name: Meine Doku
+site_name: Mein Blog
+docs_dir: .
 nav:
-  - Start: index.md
-  - Über: about.md
-
+  - Startseite: index.md
+    - Über: about.md
+  - Blog: blog.md
+  - Beiträge:
+      - Beitrag 1: posts/beitrag1.md
+      - Beitrag 2: posts/beitrag2.md
 theme:
   name: readthedocs
+plugins:
+  - search
