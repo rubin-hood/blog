@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Erster Blogpost"
-date: 2024-05-13
+title: "Mein erster Blog-Post"
+date: 2025-05-13
 ---
 
-Das ist der Inhalt meines allerersten Blogbeitrags.
+Hier steht der Inhalt meines Posts…
