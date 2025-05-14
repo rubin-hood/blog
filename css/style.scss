@@ -53,18 +53,18 @@ header.site-header {
 @media (max-width: 768px) {
   .nav-toggle-label {
     display: block;
+    float: none;
   }
 
-  /* Site-Nav standardmäßig einklappen */
+  /* Die Navigation nimmt Platz im Seitenfluss ein */
   .site-nav {
-    overflow: hidden;
     max-height: 0;
+    overflow: hidden;
     transition: max-height 0.4s ease;
   }
 
-  /* Wenn das Toggle aktiviert ist: Site-Nav ausklappen */
   .nav-toggle:checked + .nav-toggle-label + .site-nav {
-    max-height: 500px; /* je nach Menüinhalt ggf. anpassen */
+    max-height: 500px; /* genug Platz für alle Einträge */
   }
 
   .nav-menu {
@@ -75,5 +75,6 @@ header.site-header {
 
   .nav-menu li {
     padding-left: 1rem;
+    display: block;
   }
 }
