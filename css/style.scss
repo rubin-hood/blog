@@ -1,28 +1,95 @@
+/* Datei: css/style.scss */
+/*
+  Front Matter, damit Jekyll die Datei überhaupt als SCSS verarbeitet
+*/
+---
+@import "minima";
+---
+
+/* ----------------------------------------------
+   1. Header-Grundstyling
+   ---------------------------------------------- */
+header.site-header {
+  background-color: #F6F5F1;
+  padding: 1rem 0;
+  /* Damit der Header in mobilen Ansichten mitwächst */
+  position: relative;
+  overflow: hidden;
+}
+
+/* ----------------------------------------------
+   2. Link-Farben & Hover-States
+   ---------------------------------------------- */
+.site-nav a {
+  color: #009C6C;
+  text-decoration: none;
+}
+.site-nav .current a,
+.site-nav a:hover {
+  color: #AA061F;
+}
+
+/* ----------------------------------------------
+   3. Hamburger-Logik (Checkbox & Label)
+   ---------------------------------------------- */
+.nav-toggle {
+  display: none;
+}
+.nav-toggle-label {
+  display: none;
+  font-size: 1.75rem;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.5rem;
+  float: right;
+}
+
+/* ----------------------------------------------
+   4. Desktop-Navigation (Standard)
+   ---------------------------------------------- */
+.nav-menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+.nav-menu li {
+  display: inline;
+}
+
+/* ----------------------------------------------
+   5. Mobile-Responsive (bis 768 px)
+   ---------------------------------------------- */
 @media (max-width: 768px) {
-  // 1) Header nimmt automatisch die Höhe des Nav-Bereichs an
-  header.site-header {
-    position: relative;
-    overflow: hidden;       // sorgt dafür, dass keine Ausreißer den Fluss stören
+  /* Hamburger-Icon einblenden */
+  .nav-toggle-label {
+    display: block;
+    float: none;
   }
 
-  // 2) Navigation standardmäßig eingeklappt, aber im Fluss
+  /* .site-nav bleibt im Fluss, aber eingeklappt */
   .site-nav {
-    position: static !important; // hebt alle absoluten Positionierungen auf
+    position: static !important;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
   }
 
-  // 3) Checkbox-Hack: wenn angehakt, wächst die nav in der Höhe
+  /* Wenn die Checkbox aktiv ist, klappt die Nav auf */
   .nav-toggle:checked + .nav-toggle-label + .site-nav {
-    max-height: 500px;      // großzügig bemessen für alle Einträge
+    max-height: 500px; /* groß genug für alle Menüpunkte */
   }
 
-  // 4) Menü-Einträge weiterhin untereinander
+  /* Menüeinträge untereinander */
   .nav-menu {
-    display: flex;
     flex-direction: column;
     gap: 0.75rem;
     margin-top: 1rem;
+  }
+  .nav-menu li {
+    display: block;
+    padding-left: 1rem;
   }
 }
