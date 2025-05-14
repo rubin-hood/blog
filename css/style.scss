@@ -21,21 +21,21 @@ header.site-header {
   color: #AA061F;
 }
 
-// Hamburger-Grundlogik
+// Toggle verstecken
 .nav-toggle {
   display: none;
 }
 
+// Toggle-Button
 .nav-toggle-label {
   display: none;
   font-size: 1.75rem;
   cursor: pointer;
   user-select: none;
   padding: 0.5rem;
-  float: right;
 }
 
-// Navigation standard (Desktop)
+// Desktop-Menü
 .nav-menu {
   display: flex;
   gap: 1rem;
@@ -49,22 +49,10 @@ header.site-header {
   display: inline;
 }
 
-// Responsive Verhalten
+// Mobile
 @media (max-width: 768px) {
   .nav-toggle-label {
     display: block;
-    float: none;
-  }
-
-  /* Die Navigation nimmt Platz im Seitenfluss ein */
-  .site-nav {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-  }
-
-  .nav-toggle:checked + .nav-toggle-label + .site-nav {
-    max-height: 500px; /* genug Platz für alle Einträge */
   }
 
   .nav-menu {
@@ -76,5 +64,19 @@ header.site-header {
   .nav-menu li {
     padding-left: 1rem;
     display: block;
+  }
+
+  .site-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .nav-toggle:checked + .site-nav {
+    max-height: 500px; /* Anpassen je nach Menüinhalt */
+  }
+
+  .nav-menu {
+    display: flex;
   }
 }
