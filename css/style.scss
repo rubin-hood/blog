@@ -1,82 +1,28 @@
----
-# Front Matter – damit Jekyll die Datei verarbeitet
----
-
-@import "minima";
-
-// Header-Styling
-header.site-header {
-  background-color: #F6F5F1;
-  padding: 1rem 0;
-}
-
-// Linkfarben
-.site-nav a {
-  color: #009C6C;
-  text-decoration: none;
-}
-
-.site-nav .current a,
-.site-nav a:hover {
-  color: #AA061F;
-}
-
-// Toggle verstecken
-.nav-toggle {
-  display: none;
-}
-
-// Toggle-Button
-.nav-toggle-label {
-  display: none;
-  font-size: 1.75rem;
-  cursor: pointer;
-  user-select: none;
-  padding: 0.5rem;
-}
-
-// Desktop-Menü
-.nav-menu {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
-}
-
-.nav-menu li {
-  display: inline;
-}
-
-// Mobile
 @media (max-width: 768px) {
-  .nav-toggle-label {
-    display: block;
+  // 1) Header nimmt automatisch die Höhe des Nav-Bereichs an
+  header.site-header {
+    position: relative;
+    overflow: hidden;       // sorgt dafür, dass keine Ausreißer den Fluss stören
   }
 
-  .nav-menu {
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-top: 1rem;
-  }
-
-  .nav-menu li {
-    padding-left: 1rem;
-    display: block;
-  }
-
+  // 2) Navigation standardmäßig eingeklappt, aber im Fluss
   .site-nav {
+    position: static !important; // hebt alle absoluten Positionierungen auf
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
   }
 
-  .nav-toggle:checked + .site-nav {
-    max-height: 500px; /* Anpassen je nach Menüinhalt */
+  // 3) Checkbox-Hack: wenn angehakt, wächst die nav in der Höhe
+  .nav-toggle:checked + .nav-toggle-label + .site-nav {
+    max-height: 500px;      // großzügig bemessen für alle Einträge
   }
 
+  // 4) Menü-Einträge weiterhin untereinander
   .nav-menu {
     display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
   }
 }
