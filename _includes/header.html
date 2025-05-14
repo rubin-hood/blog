@@ -1,24 +1,30 @@
+<!-- Datei: _includes/header.html (o.ä.), eingebunden in dein Layout -->
 <header class="site-header" role="banner">
   <div class="wrapper">
-    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <a class="site-title" href="{{ '/' | relative_url }}">
+      {{ site.title }}
+    </a>
 
+    <!-- Checkbox für das Hamburger-Icon -->
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    
-    <!-- Nav folgt direkt nach Toggle -->
-    <nav class="site-nav">
-      <label for="nav-toggle" class="nav-toggle-label">☰</label>
+    <label for="nav-toggle" class="nav-toggle-label">☰</label>
 
+    <nav class="site-nav">
       <ul class="nav-menu">
         {% if site.minima.navigation %}
           {% for item in site.minima.navigation %}
             <li>
-              <a class="page-link{% if page.url == item.url %} current{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              <a
+                class="page-link{% if page.url == item.url %} current{% endif %}"
+                href="{{ item.url | relative_url }}"
+              >
+                {{ item.title }}
+              </a>
             </li>
           {% endfor %}
         {% endif %}
       </ul>
     </nav>
   </div>
-
   <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
 </header>
