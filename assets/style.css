@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.flex-container {
+  display: flex;
+}
+
+nav {
+  width: 250px;
+  min-width: 180px;
+  border-right: 1px solid #eee;
+  min-height: 100vh;
+  padding: 1em;
+  background: #fafafa;
+}
+
+main {
+  flex: 1;
+  padding: 2em;
+}
+
+@media (max-width: 700px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+    min-width: 0;
+    min-height: unset;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+  main {
+    padding: 1em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+}
