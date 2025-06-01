@@ -167,8 +167,8 @@ img {
     padding: 0.3em 0.7em;
   }
   .main-logo {
-    max-width: 110px;
-    max-height: 30px;
+    max-width: 100px;
+    max-height: auto;
   }
   .sidebar-toggle {
     right: 1em;
