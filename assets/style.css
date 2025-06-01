@@ -255,7 +255,7 @@ img {
     padding: 0.5em 1vw;
   }
   .main-logo {
-    max-width: 80px;
-    max-height: 24px;
+    max-width: 100px;
+    max-height: auto;
   }
 }
