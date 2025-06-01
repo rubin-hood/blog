@@ -220,7 +220,7 @@ img {
   }
   nav#sidebar {
     position: static;
-    width: 550px;
+    width: 450px;
     min-width: 160px;
     height: auto;
     box-shadow: none;
