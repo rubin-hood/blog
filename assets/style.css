@@ -263,3 +263,52 @@ img {
     max-height: 28px;
   }
 }
+
+
+
+
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f6f5f1;
+  padding: 1em 2vw;
+  gap: 1.5em;
+}
+
+
+
+.main-nav {
+  display: flex;
+  gap: 2.5em;
+}
+
+.main-nav a {
+  color: #029e7b;
+  font-size: 2.3em;
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.15s;
+}
+
+.main-nav a:hover {
+  color: #f44336;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.social-links a img {
+  height: 38px;
+  display: block;
+  filter: brightness(0) saturate(100%) invert(36%) sepia(93%) saturate(628%) hue-rotate(127deg) brightness(93%) contrast(99%);
+  /* Farbfilter für grün, optional! */
+  transition: filter 0.18s;
+}
+.social-links a img:hover {
+  filter: brightness(0) saturate(100%) invert(41%) sepia(97%) saturate(3395%) hue-rotate(334deg) brightness(97%) contrast(106%);
+}
