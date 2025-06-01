@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
 </head>
 <body>
-  <!-- Header mit Logo und Hamburger rechts -->
   <header class="top-logo-header">
     <a href="{{ site.baseurl }}/">
       <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="main-logo">
     </a>
-    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menü öffnen" onclick="toggleSidebar()">&#9776;</button>
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menü öffnen">
+      <span class="icon"></span>
+    </button>
   </header>
   <div class="flex-container">
     <nav id="sidebar">
@@ -27,14 +28,21 @@
       {{ content }}
     </main>
   </div>
+  <footer class="footer">
+    <div>
+      &copy; {{ site.time | date: '%Y' }} Rubin Hood Blog &ndash; gebaut mit ❤️ und Jekyll
+    </div>
+  </footer>
   <script>
-    function toggleSidebar() {
-      var sidebar = document.getElementById('sidebar');
-      sidebar.classList.toggle('open');
+    // Toggle Sidebar & Hamburger/X-Icon
+    document.getElementById('sidebarToggle').addEventListener('click', function(e) {
+      e.stopPropagation();
+      document.getElementById('sidebar').classList.toggle('open');
+      this.classList.toggle('open');
       document.body.classList.toggle('sidebar-open');
-      document.getElementById('sidebarToggle').style.display =
-        sidebar.classList.contains('open') ? 'none' : 'block';
-    }
+    });
+
+    // Close Sidebar when clicking outside (mobile)
     document.addEventListener('click', function(e) {
       var sidebar = document.getElementById('sidebar');
       var toggle = document.getElementById('sidebarToggle');
@@ -44,35 +52,23 @@
         !toggle.contains(e.target)
       ) {
         sidebar.classList.remove('open');
+        toggle.classList.remove('open');
         document.body.classList.remove('sidebar-open');
-        toggle.style.display = 'block';
       }
     });
+
+    // Close Sidebar on link click (mobile)
     document.addEventListener('DOMContentLoaded', function(){
       document.querySelectorAll('#sidebar a').forEach(function(link){
         link.addEventListener('click', function(){
           if(window.innerWidth <= 700){
             document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('sidebarToggle').classList.remove('open');
             document.body.classList.remove('sidebar-open');
-            document.getElementById('sidebarToggle').style.display = 'block';
           }
         });
       });
-      var sidebar = document.getElementById('sidebar');
-      document.getElementById('sidebarToggle').style.display =
-        sidebar.classList.contains('open') ? 'none' : 'block';
     });
   </script>
-
-
-  <footer class="footer">
-    <div>
-      &copy; {{ site.time | date: '%Y' }} Rubin Hood Blog &ndash; gebaut mit ❤️ und Jekyll
-    </div>
-  </footer>
-</body>
-</html>
-
-
 </body>
 </html>
