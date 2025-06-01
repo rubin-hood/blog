@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  </head>
-  <body>
-    {% include header.html %}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div style="display: flex;">
+    <nav style="width: 250px; border-right: 1px solid #eee; min-height: 100vh; padding: 1em;">
+      <h2>Beiträge</h2>
+      <ul style="list-style: none; padding-left: 0;">
+        {% for post in site.posts %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <main style="flex: 1; padding: 2em;">
+      {{ content }}
     </main>
-
-    <footer class="site-footer">
-      <div class="wrapper">
-        &copy; {{ site.time | date: '%Y' }} {{ site.title }}
-      </div>
-    </footer>
-  </body>
+  </div>
+</body>
 </html>
