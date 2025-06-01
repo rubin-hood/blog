@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 # Willkommen zu meinem Blog
 
 <ul>
