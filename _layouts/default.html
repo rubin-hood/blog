@@ -15,32 +15,27 @@
   </button>
 
   <header class="top-logo-header">
-    <a href="{{ site.baseurl }}/">
-      <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="main-logo">
-    </a>
-
-<header class="main-header">
-  <div class="logo">
-    <img src="logo.png" alt="Rubin Hood Logo">
-    <span>RUBIN HOOD</span>
-  </div>
-  <nav class="main-nav">
-    <a href="#">Home</a>
-    <a href="#">Blog</a>
-    <a href="#">About</a>
-    <a href="#">My Projects</a>
-  </nav>
-  <div class="social-links">
-    <a href="#"><img src="github.svg" alt="GitHub"></a>
-    <a href="#"><img src="butterfly.svg" alt="Butterfly"></a>
-    <a href="#"><img src="dot.svg" alt="Dot"></a>
-    <a href="#"><img src="codepen.svg" alt="CodePen"></a>
-    <a href="#"><img src="youtube.svg" alt="YouTube"></a>
-  </div>
-</header>
-
-    
+    <div class="header-inner">
+      <a href="{{ site.baseurl }}/" class="logo-link">
+        <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="main-logo">
+        <span class="logo-text">RUBIN HOOD</span>
+      </a>
+      <nav class="main-nav">
+        <a href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}/blog/">Blog</a>
+        <a href="{{ site.baseurl }}/about/">About</a>
+        <a href="{{ site.baseurl }}/projects/">My Projects</a>
+      </nav>
+      <div class="social-links">
+        <a href="https://github.com/" target="_blank" aria-label="GitHub"><img src="{{ site.baseurl }}/assets/github.svg" alt="GitHub"></a>
+        <a href="#" aria-label="Butterfly"><img src="{{ site.baseurl }}/assets/butterfly.svg" alt="Butterfly"></a>
+        <a href="#" aria-label="Dot"><img src="{{ site.baseurl }}/assets/dot.svg" alt="Dot"></a>
+        <a href="#" aria-label="CodePen"><img src="{{ site.baseurl }}/assets/codepen.svg" alt="CodePen"></a>
+        <a href="#" aria-label="YouTube"><img src="{{ site.baseurl }}/assets/youtube.svg" alt="YouTube"></a>
+      </div>
+    </div>
   </header>
+
   <div class="flex-container">
     <nav id="sidebar">
       <h2>Beiträge</h2>
