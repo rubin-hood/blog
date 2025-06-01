@@ -5,9 +5,35 @@ body {
   color: #222;
 }
 
+/* Immer sichtbarer Header oben */
+.top-logo-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2000;
+  background: #fafcff;
+  border-bottom: 1px solid #e4e7ee;
+  box-shadow: 0 2px 8px rgba(80, 100, 140, 0.03);
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+  padding: 0.3em 0 0.3em 1.5em;
+}
+
+/* Logo optimal begrenzen */
+.main-logo {
+  max-width: 180px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
 .flex-container {
   display: flex;
   min-height: 100vh;
+  margin-top: 70px; /* Abstand für Header */
 }
 
 /* SIDEBAR styles */
@@ -57,19 +83,10 @@ main {
   margin: 0 auto;
 }
 
-@media (max-width: 900px) {
-  main {
-    padding: 1.5em 1vw;
-  }
-}
-
 /* Hamburger-Menü Style */
 .sidebar-toggle {
   display: none;
-  position: fixed;
-  top: 1em;
-  left: 1em;
-  z-index: 1101;
+  margin-left: 20px;
   font-size: 2em;
   background: #f4f6fa;
   border: 1px solid #e4e7ee;
@@ -80,12 +97,29 @@ main {
 }
 
 /* Mobile Ansicht */
+@media (max-width: 900px) {
+  main {
+    padding: 1.5em 1vw;
+  }
+}
+
 @media (max-width: 700px) {
   .sidebar-toggle {
     display: block;
+    margin-left: 18px;
+  }
+  .top-logo-header {
+    min-height: 48px;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+  }
+  .main-logo {
+    max-width: 110px;
+    max-height: 30px;
   }
   .flex-container {
     flex-direction: column;
+    margin-top: 52px;
   }
   nav#sidebar {
     position: fixed;
@@ -145,27 +179,8 @@ main {
   main {
     padding: 0.5em 1vw;
   }
+  .main-logo {
+    max-width: 80px;
+    max-height: 24px;
+  }
 }
-
-
-
-
-<header class="top-logo-header">
-  <a href="{{ site.baseurl }}/">
-    <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="main-logo">
-  </a>
-  <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menü öffnen" onclick="toggleSidebar()">&#9776;</button>
-</header>
-<div class="flex-container">
-  <nav id="sidebar">
-    <h2>Beiträge</h2>
-    <ul>
-      {% for post in site.posts %}
-        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </nav>
-  <main>
-    {{ content }}
-  </main>
-</div>
