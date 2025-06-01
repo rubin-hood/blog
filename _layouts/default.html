@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
 </head>
 <body>
-  <!-- Hamburger-Button für Mobil -->
-  <button class="sidebar-toggle" aria-label="Menü öffnen" onclick="toggleSidebar()">&#9776;</button>
+  <!-- Hamburger-Menü-Button -->
+  <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menü öffnen" onclick="toggleSidebar()">&#9776;</button>
   <div class="flex-container">
     <nav id="sidebar">
       <h2>Beiträge</h2>
@@ -27,11 +27,13 @@
       var sidebar = document.getElementById('sidebar');
       sidebar.classList.toggle('open');
       document.body.classList.toggle('sidebar-open');
+      document.getElementById('sidebarToggle').style.display =
+        sidebar.classList.contains('open') ? 'none' : 'block';
     }
-    // Schließt die Sidebar, wenn man außerhalb klickt
+    // Klick außerhalb der Sidebar schließt das Menü
     document.addEventListener('click', function(e) {
       var sidebar = document.getElementById('sidebar');
-      var toggle = document.querySelector('.sidebar-toggle');
+      var toggle = document.getElementById('sidebarToggle');
       if (
         sidebar.classList.contains('open') &&
         !sidebar.contains(e.target) &&
@@ -39,16 +41,24 @@
       ) {
         sidebar.classList.remove('open');
         document.body.classList.remove('sidebar-open');
+        toggle.style.display = 'block';
       }
     });
-    // Schließt Sidebar bei Klick auf Link (nur mobil)
-    document.querySelectorAll('#sidebar a').forEach(function(link){
-      link.addEventListener('click', function(){
-        if(window.innerWidth <= 700){
-          document.getElementById('sidebar').classList.remove('open');
-          document.body.classList.remove('sidebar-open');
-        }
+    // Klick auf Link schließt das Menü auf Mobilgeräten
+    document.addEventListener('DOMContentLoaded', function(){
+      document.querySelectorAll('#sidebar a').forEach(function(link){
+        link.addEventListener('click', function(){
+          if(window.innerWidth <= 700){
+            document.getElementById('sidebar').classList.remove('open');
+            document.body.classList.remove('sidebar-open');
+            document.getElementById('sidebarToggle').style.display = 'block';
+          }
+        });
       });
+      // Korrektes Initialisieren des Buttons
+      var sidebar = document.getElementById('sidebar');
+      document.getElementById('sidebarToggle').style.display =
+        sidebar.classList.contains('open') ? 'none' : 'block';
     });
   </script>
 </body>
