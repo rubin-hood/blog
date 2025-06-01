@@ -1,4 +1,3 @@
-/* --- Globale Regeln gegen Überbreite und Außenabstand --- */
 html, body {
   margin: 0 !important;
   padding: 0 !important;
@@ -10,7 +9,6 @@ html, body {
   background: #F6F5F1;
 }
 
-/* HEADER: Logo links, Hamburger rechts */
 .top-logo-header {
   width: 100vw;
   max-width: 100vw;
@@ -27,7 +25,6 @@ html, body {
   padding: 0.3em 1.5em 0.3em 1.5em;
 }
 
-/* Logo im Header */
 .main-logo {
   max-width: 180px;
   max-height: 50px;
@@ -36,7 +33,6 @@ html, body {
   display: block;
 }
 
-/* Hamburger-Menü Style */
 .sidebar-toggle {
   display: none;
   font-size: 2em;
@@ -49,7 +45,6 @@ html, body {
   margin-left: 20px;
 }
 
-/* Layout: Sidebar links, Inhalt rechts */
 .flex-container {
   display: flex;
   min-height: 100vh;
@@ -61,11 +56,10 @@ html, body {
   background: transparent;
 }
 
-/* SIDEBAR styles (Desktop/Default) */
 nav#sidebar {
-  width: 550px;
+  width: 90vw;
   min-width: 160px;
-  max-width: 100vw;
+  max-width: 380px;
   background: #98bafe;
   border-right: 1px solid #ff80e1;
   padding: 2em 1em 1em 1.5em;
@@ -73,6 +67,15 @@ nav#sidebar {
   box-sizing: border-box;
   overflow-x: hidden;
   margin: 0;
+  position: fixed;
+  left: -100vw;
+  top: 0;
+  height: 100vh;
+  z-index: 1000;
+}
+
+nav#sidebar.open {
+  left: 0;
 }
 
 nav#sidebar h2 {
@@ -105,7 +108,6 @@ nav#sidebar a:hover {
   text-decoration: underline;
 }
 
-/* Hauptinhalt */
 main {
   flex: 1;
   min-width: 0;
@@ -124,7 +126,6 @@ img {
   box-sizing: border-box;
 }
 
-/* Footer */
 .footer {
   width: 100vw;
   max-width: 100vw;
@@ -142,14 +143,12 @@ img {
   left: 0;
 }
 
-/* Responsiv */
 @media (max-width: 900px) {
   main {
     padding: 1.5em 1vw;
   }
 }
 
-/* --------- Mobile Anpassung (Sidebar 100vw!) --------- */
 @media (max-width: 700px) {
   .top-logo-header {
     min-height: 48px;
@@ -163,6 +162,10 @@ img {
     display: block;
     margin-left: 0;
     margin-right: 0;
+    z-index: 1101;
+    position: fixed;
+    top: 1em;
+    right: 1em;
   }
   .flex-container {
     flex-direction: column;
@@ -171,12 +174,11 @@ img {
     max-width: 100vw;
   }
   nav#sidebar {
-    position: fixed;
+    width: 90vw;
+    max-width: 380px;
+    min-width: 160px;
     left: -100vw;
     top: 0;
-    width: 100vw;        /* <-- Sidebar nimmt jetzt 100% der Breite im Mobile-View */
-    max-width: 100vw;    /* <-- Sicherstellen, dass nichts limitiert */
-    min-width: unset;
     height: 100vh;
     z-index: 1000;
     background: #65e7cd;
@@ -189,6 +191,7 @@ img {
     box-sizing: border-box;
     overflow-x: hidden;
     margin: 0;
+    position: fixed;
   }
   nav#sidebar.open {
     left: 0;
@@ -220,8 +223,9 @@ img {
   }
   nav#sidebar {
     position: static;
-    width: 100%;
+    width: 550px;
     min-width: 160px;
+    max-width: 100vw;
     height: auto;
     box-shadow: none;
     transition: none;
