@@ -7,15 +7,17 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
 </head>
 <body>
+  <!-- Hamburger-Button muss HIER stehen! -->
+  <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menü öffnen">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
   <header class="top-logo-header">
     <a href="{{ site.baseurl }}/">
       <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="main-logo">
     </a>
-<button class="sidebar-toggle" id="sidebarToggle" aria-label="Menü öffnen" onclick="toggleSidebar()">
-  <span class="bar"></span>
-  <span class="bar"></span>
-  <span class="bar"></span>
-</button>
   </header>
   <div class="flex-container">
     <nav id="sidebar">
@@ -36,7 +38,7 @@
     </div>
   </footer>
   <script>
-    // Toggle Sidebar & Hamburger/X-Icon
+    // Sidebar-Button-Logik
     document.getElementById('sidebarToggle').addEventListener('click', function(e) {
       e.stopPropagation();
       document.getElementById('sidebar').classList.toggle('open');
@@ -44,7 +46,7 @@
       document.body.classList.toggle('sidebar-open');
     });
 
-    // Close Sidebar when clicking outside (mobile)
+    // Schließen bei Klick außerhalb
     document.addEventListener('click', function(e) {
       var sidebar = document.getElementById('sidebar');
       var toggle = document.getElementById('sidebarToggle');
@@ -59,7 +61,7 @@
       }
     });
 
-    // Close Sidebar on link click (mobile)
+    // Schließen bei Link-Klick
     document.addEventListener('DOMContentLoaded', function(){
       document.querySelectorAll('#sidebar a').forEach(function(link){
         link.addEventListener('click', function(){
