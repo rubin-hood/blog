@@ -7,28 +7,26 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
 </head>
 <body>
-  <!-- Fixes Logo/Header oben auf der Seite -->
-
-<header class="top-logo-header">
-  <a href="{{ site.baseurl }}/">
-    <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="main-logo">
-  </a>
-  <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menü öffnen" onclick="toggleSidebar()">&#9776;</button>
-</header>
-<div class="flex-container">
-  <nav id="sidebar">
-    <h2>Beiträge</h2>
-    <ul>
-      {% for post in site.posts %}
-        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </nav>
-  <main>
-    {{ content }}
-  </main>
-</div>
-  
+  <!-- Immer sichtbarer Header mit Logo und Hamburger-Menü -->
+  <header class="top-logo-header">
+    <a href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="main-logo">
+    </a>
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menü öffnen" onclick="toggleSidebar()">&#9776;</button>
+  </header>
+  <div class="flex-container">
+    <nav id="sidebar">
+      <h2>Beiträge</h2>
+      <ul>
+        {% for post in site.posts %}
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <main>
+      {{ content }}
+    </main>
+  </div>
   <script>
     function toggleSidebar() {
       var sidebar = document.getElementById('sidebar');
