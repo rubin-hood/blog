@@ -24,8 +24,7 @@ html, body {
 
 .main-logo {
   max-width: 100px;
-  max-height: auto;
-  width: auto;
+  width: 100px;
   height: auto;
   display: block;
 }
@@ -160,21 +159,26 @@ img {
   left: 0;
 }
 
-/* RESPONSIVE SIDEBAR: Mobil 100vw, 100vh */
+/* ===== MOBILE: Sidebar überdeckt das ganze Fenster inkl. Header ===== */
 @media (max-width: 700px) {
   .top-logo-header {
     min-height: 48px;
     padding: 0.3em 0.7em;
+    z-index: 2002;
   }
   .main-logo {
     max-width: 100px;
-    max-height: auto;
+    width: 100px;
+    height: auto;
   }
   .sidebar-toggle {
-    right: 1em;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 3002;
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    transform: none;
+    z-index: 3100;
+    /* Wenn Sidebar offen, Hintergrund dunkler */
+    background: #97ec98;
   }
   .flex-container {
     flex-direction: column;
@@ -189,13 +193,13 @@ img {
     height: 100vh;
     max-width: 100vw;
     max-height: 100vh;
-    z-index: 2001;
+    z-index: 3005;
     background: #65e7cd;
     border-right: none;
     border-bottom: none;
     box-shadow: 2px 0 6px rgba(50,60,100,0.08);
     transition: left 0.25s;
-    padding-top: 8em;
+    padding-top: 3.5em;
     padding-left: 2vw;
     padding-right: 2vw;
     box-sizing: border-box;
@@ -218,7 +222,7 @@ img {
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.18);
-    z-index: 900;
+    z-index: 2500;
   }
   .footer {
     font-size: 0.97em;
@@ -243,19 +247,21 @@ img {
     box-sizing: border-box;
     margin: 0;
     max-width: 650vw;
+    z-index: 1;
   }
 }
 
 @media (max-width: 500px) {
   nav#sidebar {
     padding: 0.5em 0.5em 0.5em 1em;
-    padding-top: 4em;
+    padding-top: 3.2em;
   }
   main {
     padding: 0.5em 1vw;
   }
   .main-logo {
-    max-width: 100px;
-    max-height: auto;
+    max-width: 90px;
+    width: 90px;
+    height: auto;
   }
 }
