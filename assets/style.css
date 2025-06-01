@@ -61,11 +61,11 @@ html, body {
   background: transparent;
 }
 
-/* SIDEBAR styles */
-nav {
+/* SIDEBAR styles (Desktop/Default) */
+nav#sidebar {
   width: 550px;
   min-width: 160px;
-  max-width: 650vw;
+  max-width: 100vw;
   background: #98bafe;
   border-right: 1px solid #ff80e1;
   padding: 2em 1em 1em 1.5em;
@@ -75,24 +75,24 @@ nav {
   margin: 0;
 }
 
-nav h2 {
+nav#sidebar h2 {
   font-size: 1.5em;
   margin-top: 0;
   font-weight: bold;
   letter-spacing: 0.5px;
 }
 
-nav ul {
+nav#sidebar ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-nav li {
+nav#sidebar li {
   margin-bottom: 1.1em;
 }
 
-nav a {
+nav#sidebar a {
   color: #3a4a6a;
   text-decoration: none;
   font-weight: bold;
@@ -100,7 +100,7 @@ nav a {
   transition: color 0.2s;
 }
 
-nav a:hover {
+nav#sidebar a:hover {
   color: #ee87b4;
   text-decoration: underline;
 }
@@ -173,8 +173,9 @@ img {
     position: fixed;
     left: -100vw;
     top: 0;
-    width: 80vw;
+    width: 80vw;          /* Mobile-Breite, z.B. 80% des Bildschirms */
     max-width: 300px;
+    min-width: unset;
     height: 100vh;
     z-index: 1000;
     background: #65e7cd;
@@ -195,7 +196,7 @@ img {
     padding: 1em 2vw;
     max-width: 100%;
   }
-  nav h2 {
+  nav#sidebar h2 {
     font-size: 1.15em;
   }
   body.sidebar-open::before {
@@ -212,13 +213,14 @@ img {
   }
 }
 
+/* Für Desktop wieder Sidebar auf 550px zurücksetzen */
 @media (min-width: 701px) {
   .sidebar-toggle {
     display: none !important;
   }
   nav#sidebar {
     position: static;
-    width: 240px;
+    width: 550px;
     min-width: 160px;
     height: auto;
     box-shadow: none;
