@@ -195,7 +195,7 @@ img {
     border-bottom: none;
     box-shadow: 2px 0 6px rgba(50,60,100,0.08);
     transition: left 0.25s;
-    padding-top: 4.4em;
+    padding-top: 8em;
     padding-left: 2vw;
     padding-right: 2vw;
     box-sizing: border-box;
@@ -239,7 +239,7 @@ img {
     height: auto;
     box-shadow: none;
     transition: none;
-    padding-top: 8em;
+    padding-top: 2em;
     box-sizing: border-box;
     margin: 0;
     max-width: 650vw;
