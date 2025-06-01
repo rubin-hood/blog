@@ -151,7 +151,7 @@ img {
 
 @media (max-width: 700px) {
   .top-logo-header {
-    min-height: 48px;
+    min-height: 80px;
     padding: 0.3em 0.7em 0.3em 0.7em;
   }
   .main-logo {
