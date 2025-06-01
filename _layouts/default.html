@@ -11,6 +11,22 @@
   <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menü öffnen" onclick="toggleSidebar()">&#9776;</button>
   <div class="flex-container">
     <nav id="sidebar">
+
+
+  <div class="logo-container">
+    <a href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="sidebar-logo">
+    </a>
+  </div>
+  <h2>Beiträge</h2>
+  <ul>
+    {% for post in site.posts %}
+      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+
+      
       <h2>Beiträge</h2>
       <ul>
         {% for post in site.posts %}
