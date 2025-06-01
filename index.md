@@ -1,10 +1,7 @@
 ---
 layout: default
 ---
+
 # Willkommen zu meinem Blog
 
-<ul>
-  {% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+Herzlich willkommen auf meinem Blog! Wähle links einen Beitrag aus.
