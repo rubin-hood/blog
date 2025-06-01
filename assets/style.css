@@ -268,47 +268,58 @@ img {
 
 
 
-.main-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #f6f5f1;
-  padding: 1em 2vw;
-  gap: 1.5em;
-}
-
-
-
 .main-nav {
   display: flex;
-  gap: 2.5em;
+  gap: 3em;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 .main-nav a {
-  color: #029e7b;
-  font-size: 2.3em;
+  color: #009875;
+  font-size: 2.1em;
   text-decoration: none;
-  font-weight: 300;
-  transition: color 0.15s;
+  font-family: inherit;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  transition: color 0.18s;
 }
 
 .main-nav a:hover {
-  color: #f44336;
+  color: #F36D6D;
+  text-decoration: underline;
 }
 
 .social-links {
   display: flex;
   align-items: center;
-  gap: 1.5em;
+  gap: 1.6em;
 }
 
-.social-links a img {
-  height: 38px;
+.social-links a {
+  display: flex;
+  align-items: center;
+}
+
+.social-links img {
+  height: 2em;
+  width: auto;
   display: block;
-  filter: brightness(0) saturate(100%) invert(36%) sepia(93%) saturate(628%) hue-rotate(127deg) brightness(93%) contrast(99%);
-  /* Farbfilter für grün, optional! */
-  transition: filter 0.18s;
+  filter: grayscale(0);
+  transition: filter 0.18s, opacity 0.18s;
 }
-.social-links a img:hover {
-  filter: brightness(0) saturate(100%) invert(41%) sepia(97%) saturate(3395%) hue-rotate(334deg) brightness(97%) contrast(106%);
+
+.social-links a:hover img {
+  filter: brightness(0.65) saturate(1.5);
+  opacity: 0.8;
 }
+
+/* Responsiv: auf schmalen Geräten ausblenden (z.B. für Sidebar/Hamburger-Menü) */
+@media (max-width: 700px) {
+  .main-nav,
+  .social-links {
+    display: none !important;
+  }
+}
+
