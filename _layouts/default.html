@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
-</head>
 <body>
-  <div style="display: flex;">
-    <nav style="width: 250px; border-right: 1px solid #eee; min-height: 100vh; padding: 1em;">
+  <div class="flex-container">
+    <nav>
       <h2>Beiträge</h2>
       <ul style="list-style: none; padding-left: 0;">
         {% for post in site.posts %}
@@ -14,9 +8,8 @@
         {% endfor %}
       </ul>
     </nav>
-    <main style="flex: 1; padding: 2em;">
+    <main>
       {{ content }}
     </main>
   </div>
 </body>
-</html>
