@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
 </head>
 <body>
   <div style="display: flex;">
@@ -10,7 +10,7 @@
       <h2>Beiträge</h2>
       <ul style="list-style: none; padding-left: 0;">
         {% for post in site.posts %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
       </ul>
     </nav>
