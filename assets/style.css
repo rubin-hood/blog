@@ -63,9 +63,9 @@ html, body {
 
 /* SIDEBAR styles */
 nav {
-  width: 350px;
+  width: 550px;
   min-width: 160px;
-  max-width: 350vw;
+  max-width: 650vw;
   background: #98bafe;
   border-right: 1px solid #ff80e1;
   padding: 2em 1em 1em 1.5em;
