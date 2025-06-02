@@ -346,3 +346,53 @@ img {
   background: #eafaea;           /* Hintergrundfarbe beim Hover/Focus (hellgrün) */
   border-radius: 5px;            /* Abgerundete Ecken beim Hover/Focus */
 }
+
+
+.sidebar-posts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-post-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  margin-bottom: 1.2em;
+}
+
+.sidebar-post-item a {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  text-decoration: none;
+  color: #3a4a6a;
+  transition: color 0.2s;
+}
+
+.sidebar-post-item a:hover {
+  color: #ee87b4;
+  background: #eafaea;
+  border-radius: 6px;
+}
+
+.sidebar-post-thumb {
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(20,60,110,0.13);
+}
+
+.sidebar-post-title {
+  font-weight: 500;
+  font-size: 1em;
+  margin-right: 0.6em;
+}
+
+.sidebar-post-date {
+  font-size: 0.92em;
+  color: #446;
+  opacity: 0.7;
+}
+
