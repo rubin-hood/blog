@@ -19,19 +19,37 @@
       <a href="{{ site.baseurl }}/">
         <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="main-logo">
       </a>
-    </div>
-    <nav class="main-nav">
-      <a href="{{ site.baseurl }}/">Home</a>
-      <a href="{{ site.baseurl }}/blog/">Blog</a>
-      <a href="{{ site.baseurl }}_posts/about.md/">About</a>
-      <a href="{{ site.baseurl }}/projects/">My Projects</a>
+
+      
+    <nav class="nav-links"> <!-- Navigationselement, das die Links zu den verschiedenen Seiten enthält -->
+        <a href="../index.php">Home</a> <!-- Link zur Startseite -->
+        <a href="../navigation/blog.php">Blog</a>
+        <a href="../navigation/about.php">About</a> <!-- Link zur "Über uns"-Seite -->
+        <a href="../navigation/projects.php">My Projects</a> <!-- Link zur Seite mit den angebotenen Diensten -->
+
     </nav>
-    <div class="social-links">
-      <a href="https://github.com/" target="_blank" rel="noopener"><img src="{{ site.baseurl }}/assets/github.svg" alt="GitHub"></a>
-      <a href="#"><img src="{{ site.baseurl }}/assets/butterfly.svg" alt="Butterfly"></a>
-      <a href="#"><img src="{{ site.baseurl }}/assets/dot.svg" alt="Dot"></a>
-      <a href="#"><img src="{{ site.baseurl }}/assets/codepen.svg" alt="CodePen"></a>
-      <a href="#"><img src="{{ site.baseurl }}/assets/youtube.svg" alt="YouTube"></a>
+    
+    
+    <div class="social-icons"> <!-- Container für die Social-Media-Icons -->
+    
+    <a href="https://github.com/rubin-hood" target="_blank" aria-label="GitHub">
+        <img src="../socialicons/github.png" alt="GitHub">
+    </a>
+    <a href="https://bsky.app/profile/rubin-hood.bsky.social" target="_blank" aria-label="Bluesky">
+        <img src="../socialicons/bluesky.png" alt="Bluesky">
+    </a>
+    <a href="https://medium.com/@rubin-hood" target="_blank" aria-label="Medium">
+        <img src="../socialicons/medium.png" alt="Medium">
+    </a>
+    <a href="https://codepen.io/rubin-hood" target="_blank" aria-label="CodePen">
+        <img src="../socialicons/codepen.png" alt="CodePen">
+    </a>
+    <a href="https://www.youtube.com/@Rubin-Hood/videos" target="_blank" aria-label="YouTube">
+        <img src="../socialicons/youtube.png" alt="YouTube">
+    </a>
+
+
+      
     </div>
   </header>
   <div class="flex-container">
