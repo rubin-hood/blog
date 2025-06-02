@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-permalink: /home.html
+permalink: /projects.html
 ---
 🖧 Example Server Infrastructure Setup – A Closer Look
 In the following, I take a look at an exemplary network setup in a server room. The configuration shows how various servers, storage solutions, and network components are interconnected to form a powerful infrastructure. Each component plays a specific role.
