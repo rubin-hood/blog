@@ -1,5 +1,5 @@
 
-![](/articles/raspberry/001.jpg)
+![](/blog/articles/raspberry/001.jpg)
 
 ![](/articles/Raspberry-Pi/002.jpg)
 
