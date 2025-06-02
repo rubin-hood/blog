@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
 </head>
 <body>
-  <!-- Hamburger-Button immer ganz oben! -->
+  <!-- Hamburger-Button muss HIER stehen! -->
   <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menü öffnen">
     <span class="bar"></span>
     <span class="bar"></span>
@@ -15,42 +15,9 @@
   </button>
 
   <header class="top-logo-header">
-    <div class="logo">
-      <a href="{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="main-logo">
-      </a>
-
-      
-    <nav class="nav-links"> <!-- Navigationselement, das die Links zu den verschiedenen Seiten enthält -->
-        <a href="../index.php">Home</a> <!-- Link zur Startseite -->
-        <a href="../navigation/blog.php">Blog</a>
-        <a href="../_posts/about.md">About</a> <!-- Link zur "Über uns"-Seite -->
-        <a href="../navigation/projects.php">My Projects</a> <!-- Link zur Seite mit den angebotenen Diensten -->
-
-    </nav>
-    
-    
-    <div class="social-icons"> <!-- Container für die Social-Media-Icons -->
-    
-    <a href="https://github.com/rubin-hood" target="_blank" aria-label="GitHub">
-        <img src="../socialicons/github.png" alt="GitHub">
+    <a href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="main-logo">
     </a>
-    <a href="https://bsky.app/profile/rubin-hood.bsky.social" target="_blank" aria-label="Bluesky">
-        <img src="../socialicons/bluesky.png" alt="Bluesky">
-    </a>
-    <a href="https://medium.com/@rubin-hood" target="_blank" aria-label="Medium">
-        <img src="../socialicons/medium.png" alt="Medium">
-    </a>
-    <a href="https://codepen.io/rubin-hood" target="_blank" aria-label="CodePen">
-        <img src="../socialicons/codepen.png" alt="CodePen">
-    </a>
-    <a href="https://www.youtube.com/@Rubin-Hood/videos" target="_blank" aria-label="YouTube">
-        <img src="../socialicons/youtube.png" alt="YouTube">
-    </a>
-
-
-      
-    </div>
   </header>
   <div class="flex-container">
     <nav id="sidebar">
