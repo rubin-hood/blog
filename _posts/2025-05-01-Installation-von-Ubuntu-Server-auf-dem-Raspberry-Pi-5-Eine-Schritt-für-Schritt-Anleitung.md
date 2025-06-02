@@ -1,7 +1,7 @@
 
-![](../articles/Raspberry-Pi/001.jpg)
+![](/articles/Raspberry-Pi/001.jpg)
 
-![](../articles/Raspberry-Pi/002.jpg)
+![](/articles/Raspberry-Pi/002.jpg)
 
 Der Raspberry Pi 5 ist ein leistungsstarker Einplatinencomputer, der sich hervorragend als Heimserver eignet. In diesem Blogbeitrag zeige ich Ihnen, wie Sie Ubuntu Server auf Ihrem Raspberry Pi 5 installieren können. Folgen Sie dieser detaillierten Anleitung, um Ihren eigenen Ubuntu-Server einzurichten.
 
@@ -14,7 +14,7 @@ Der Raspberry Pi 5 ist ein leistungsstarker Einplatinencomputer, der sich hervor
 - Ethernet-Kabel oder WLAN-Verbindung
 - Computer zum Schreiben des Images
 
-![](../articles/Raspberry-Pi/003.jpg)
+![](/articles/Raspberry-Pi/003.jpg)
 
 ## Schritt 1: Raspberry Pi Imager herunterladen und installieren
 
