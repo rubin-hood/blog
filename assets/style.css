@@ -330,7 +330,7 @@ img {
 
 .sidebar-nav a {
   color: #222;                   /* Textfarbe (dunkelgrau) */
-  font-size: 1.5em;              /* Schriftgröße */
+  font-size: 1.2em;              /* Schriftgröße */
   font-weight: normal;           /* Normale (nicht fette) Schrift */
   text-decoration: none;         /* Keine Unterstreichung */
   padding: 0.1em 0 0.1em 0.1em;  /* Innenabstand: oben 0.1em, rechts 0, unten 0.1em, links 0.1em */
