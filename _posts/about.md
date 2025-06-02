@@ -1,6 +1,6 @@
 ---
 layout: default
 title: Home
-permalink: /home.html
+permalink: /about.html
 ---
 # Willkommen auf meiner Homepage!
