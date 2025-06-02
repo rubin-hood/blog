@@ -335,7 +335,7 @@ img {
   transition: color 0.16s;
   letter-spacing: 0.01em;
   display: block;
-  text-align: right;
+  text-align: center;
 }
 
 .sidebar-nav a:hover,
