@@ -22,7 +22,7 @@ html, body {
 }
 
 .main-logo {
-  max-width: 180px;
+  max-width: 90px;
   height: auto;
 }
 
@@ -162,7 +162,7 @@ main {
     padding: 0.3em 0.7em;
   }
   .main-logo {
-    max-width: 100px;
+    max-width: 90px;
   }
   .sidebar-toggle {
     width: 44px;
