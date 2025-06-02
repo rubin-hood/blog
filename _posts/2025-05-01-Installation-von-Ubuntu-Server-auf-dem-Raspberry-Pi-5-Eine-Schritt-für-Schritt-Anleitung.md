@@ -1,7 +1,4 @@
 
-
-# Installation von Ubuntu Server auf dem Raspberry Pi 5: Eine Schritt-für-Schritt-Anleitung
-
 ![](../articles/Raspberry-Pi/001.jpg)
 
 ![](../articles/Raspberry-Pi/002.jpg)
