@@ -13,7 +13,7 @@ html, body {
 .top-logo-header {
   width: 100vw;
   background: #F6F5F1;
-  border-bottom: 1px solid #e23f3f;
+  border-bottom: 1px solid #F6F5F1;
   box-shadow: none;
   display: flex;
   justify-content: flex-start;
@@ -42,8 +42,8 @@ html, body {
   width: 54px;
   height: 54px;
   font-size: 2em;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #F6F5F1;
+  border: 1px solid #ff0000;
   border-radius: 12px;
   padding: 0.2em 0.6em;
   cursor: pointer;
@@ -86,8 +86,8 @@ nav#sidebar {
   width: 340px;
   min-width: 140px;
   max-width: 100vw;
-  background: #fafbfc;
-  border-right: 1px solid #eee;
+  background: #F6F5F1;
+  border-right: 1px solid #2a2dd6;
   padding: 2em 1em 1em 1.5em;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -127,7 +127,7 @@ nav a {
 
 nav a:hover {
   color: #111;
-  background: #f4f4f4;
+  background: #F6F5F1;
   text-decoration: none;
 }
 
@@ -139,7 +139,7 @@ main {
   margin: 0 auto;
   box-sizing: border-box;
   overflow-x: hidden;
-  background: #fff;
+  background: #F6F5F1;
 }
 
 img {
@@ -154,9 +154,9 @@ img {
   max-width: 100vw;
   margin: 0;
   box-sizing: border-box;
-  background: #fff;
+  background: #F6F5F1;
   color: #bbb;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #0af44c;
   text-align: center;
   font-size: 1em;
   padding: 1.2em 2vw 1.2em 2vw;
@@ -188,7 +188,7 @@ img {
 .sidebar-nav a:hover,
 .sidebar-nav a:focus {
   color: #111;
-  background: #f4f4f4;
+  background: #F6F5F1;
 }
 
 /* Beitragsliste */
@@ -218,7 +218,7 @@ img {
 
 .sidebar-post-item a:hover {
   color: #111;
-  background: #f4f4f4;
+  background: #F6F5F1;
 }
 
 .sidebar-post-title {
@@ -265,7 +265,7 @@ img {
     max-width: 100vw;
     max-height: 100vh;
     z-index: 1200;
-    background: #fafbfc;
+    background: #F6F5F1;
     border: none;
     box-shadow: 2px 0 6px rgba(0,0,0,0.03);
     transition: left 0.25s;
