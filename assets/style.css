@@ -268,41 +268,47 @@ img {
 
 
 
-.main-nav {
+
+
+.nav-links {
   display: flex;
-  gap: 3em;
+  gap: 2.5em;
   align-items: center;
   justify-content: center;
-  flex: 1;
 }
 
-.main-nav a {
+.nav-links a {
   color: #009875;
-  font-size: 1.1em;
+  font-size: 2em;
   text-decoration: none;
   font-family: inherit;
   font-weight: 400;
-  letter-spacing: 0.02em;
-  transition: color 0.18s;
+  letter-spacing: 0.01em;
+  transition: color 0.2s;
+  position: relative;
+  padding: 0.1em 0;
 }
 
-.main-nav a:hover {
+.nav-links a:hover,
+.nav-links a:focus {
   color: #F36D6D;
   text-decoration: underline;
 }
 
-.social-links {
+/* Social Icons */
+.social-icons {
   display: flex;
   align-items: center;
-  gap: 1.6em;
+  gap: 1.3em;
 }
 
-.social-links a {
+.social-icons a {
   display: flex;
   align-items: center;
+  transition: opacity 0.2s;
 }
 
-.social-links img {
+.social-icons img {
   height: 2em;
   width: auto;
   display: block;
@@ -310,16 +316,26 @@ img {
   transition: filter 0.18s, opacity 0.18s;
 }
 
-.social-links a:hover img {
-  filter: brightness(0.65) saturate(1.5);
-  opacity: 0.8;
+.social-icons a:hover img,
+.social-icons a:focus img {
+  filter: brightness(0.7) saturate(1.3);
+  opacity: 0.82;
 }
 
-/* Responsiv: auf schmalen Geräten ausblenden (z.B. für Sidebar/Hamburger-Menü) */
-@media (max-width: 700px) {
-  .main-nav,
-  .social-links {
+/* Responsive: auf kleineren Bildschirmen beide Bereiche kleiner und enger */
+@media (max-width: 900px) {
+  .nav-links a { font-size: 1.3em; }
+  .social-icons img { height: 1.5em; }
+  .nav-links { gap: 1.2em; }
+  .social-icons { gap: 0.7em; }
+}
+
+/* Auf sehr kleinen Bildschirmen ggf. ganz ausblenden */
+@media (max-width: 600px) {
+  .nav-links,
+  .social-icons {
     display: none !important;
   }
 }
+
 
