@@ -314,3 +314,13 @@ img {
     z-index: 120;
   }
 }
+
+
+
+.sidebar-post-thumb {
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(20,60,110,0.13);
+}
