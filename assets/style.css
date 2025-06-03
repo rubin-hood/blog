@@ -63,7 +63,7 @@ html, body {
 /* Sidebar-Logo oben im Sidebar */
 .sidebar-logo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 1.5em;
   margin-top: 0.0em;
@@ -72,14 +72,6 @@ html, body {
   max-width: 140px;
   height: auto;
   display: block;
-}
-
-.sidebar-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.5em;
-  margin-top: 0.5em;
 }
 
 /* Nur auf Mobilen Geräten: Sidebar-Logo ausblenden */
@@ -314,7 +306,7 @@ img {
 
 .mobile-logo-bar {
   display: none;              /* Standard: ausblenden */
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 0.7em 0 0.3em 0;
   background: #F6F5F1;
