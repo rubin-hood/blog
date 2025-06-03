@@ -13,7 +13,7 @@ html, body {
 
 /* Hamburger-Menü-Button oben rechts */
 .sidebar-toggle {
-  display: flex;
+  display: fix;
   flex-direction: column;
   justify-content: center;
   align-items: center;
