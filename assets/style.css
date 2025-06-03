@@ -74,6 +74,22 @@ html, body {
   display: block;
 }
 
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+}
+
+/* Nur auf Mobilen Geräten: Sidebar-Logo ausblenden */
+@media (max-width: 700px) {
+  .sidebar-logo {
+    display: none !important;
+  }
+}
+
+
 /* Sidebar-Container */
 nav#sidebar {
   width: 40vw;
