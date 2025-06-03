@@ -292,3 +292,33 @@ img {
     z-index: 120;
   }
 }
+
+
+
+.mobile-logo-bar {
+  display: none;              /* Standard: ausblenden */
+  justify-content: center;
+  align-items: center;
+  padding: 0.7em 0 0.3em 0;
+  background: #F6F5F1;
+  z-index: 101;               /* über Sidebar */
+}
+
+.mobile-logo {
+  max-width: 120px;
+  height: auto;
+  display: block;
+}
+
+/* Nur auf Mobile zeigen */
+@media (max-width: 700px) {
+  .mobile-logo-bar {
+    display: flex;
+  }
+
+  /* Blende Logo aus, wenn Sidebar offen */
+  body.sidebar-open .mobile-logo-bar {
+    display: none;
+  }
+}
+
