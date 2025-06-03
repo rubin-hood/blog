@@ -91,6 +91,8 @@ nav#sidebar {
   width: 40vw;
   min-width: 140px;
   max-width: 100vw;
+  height: 100vh;     /* GANZE Höhe, wichtig */
+  overflow-y: auto;  /* Sidebar scrollt unabhängig */
   background: #F6F5F1;
   border-right: 1px solid #d6d5d5;
   padding: 2em 1em 1em 1.5em;
@@ -161,6 +163,8 @@ nav#sidebar::before {
 main {
   flex: 1;
   min-width: 0;
+  height: 100vh;     /* GANZE Höhe */
+  overflow-y: auto;  /* Main scrollt unabhängig */
   padding: 2em 3vw;
   max-width: 700px;
   margin: 0 auto;
