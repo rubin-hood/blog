@@ -368,7 +368,7 @@ img {
 /* Codeblock */
 
 pre {
-  background: #f4f4f4;      /* Heller Hintergrund */
+  background: #cecece;      /* Heller Hintergrund */
   color: #202020;           /* Dunkle Schrift */
   padding: 1em;             /* Innenabstand */
   border-radius: 6px;       /* Abgerundete Ecken */
@@ -379,7 +379,7 @@ pre {
 }
 
 code {
-  background: #f7f7fa;      /* Leicht abweichender Hintergrund für Inline-Code */
+  background: #b7b7b7;      /* Leicht abweichender Hintergrund für Inline-Code */
   color: #b42017;           /* Optional: Farbe für Inline-Code */
   padding: 0.2em 0.4em;     /* Etwas Innenabstand */
   border-radius: 3px;
@@ -394,3 +394,4 @@ pre code {
   border-radius: 0;
   font-size: 1em;
 }
+
