@@ -327,3 +327,19 @@ img {
   color: #B42017;
   background: #eee;
 }
+
+
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+}
+
+.sidebar-main-logo {
+  max-width: 140px;
+  height: auto;
+  display: block;
+}
+
