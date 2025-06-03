@@ -7,7 +7,7 @@ html, body {
   overflow-x: hidden;
   box-sizing: border-box;
   background: #F6F5F1;
-  color: #202020;
+  color: #333;
   font-family: system-ui, sans-serif;
 }
 
@@ -110,15 +110,6 @@ nav#sidebar::before {
   z-index: 2;         /* Damit es über der Border liegt */
 }
 
-/* Überschrift im Sidebar (Beiträge) */
-nav h2 {
-  font-size: 1.25em;
-  margin-top: 0;
-  font-weight: 400;
-  letter-spacing: 0.2px;
-  color: #009C6C;
-}
-
 /* Beitragsliste im Sidebar */
 .sidebar-posts-list {
   list-style: none;
@@ -136,7 +127,7 @@ nav h2 {
   align-items: center;
   gap: 0.6em;
   text-decoration: none;
-  color: #000000;
+  color: #333;
   transition: color 0.15s, background 0.15s;
   border-radius: 4px;
   padding: 2px 4px;
@@ -181,7 +172,7 @@ main {
   margin: 0;
   box-sizing: border-box;
   background: #F6F5F1;
-  color: #202020;
+  color: #333;
   border-top: 1px solid #F6F5F1;
   text-align: center;
   font-size: 1em;
