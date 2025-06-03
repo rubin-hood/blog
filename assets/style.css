@@ -295,7 +295,7 @@ img {
     display: none !important;
   }
   nav#sidebar {
-    position: fixed; /* <-- das ist wichtig! */
+    position: static;
     width: 40vw;
     min-width: 140px;
     height: auto;
