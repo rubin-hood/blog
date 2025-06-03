@@ -14,47 +14,51 @@
     <span class="bar"></span>
   </button>
 
+  <!-- Header OHNE Logo, nur für eventuelle spätere Inhalte/Hamburger -->
   <header class="top-logo-header">
-    <a href="{{ site.baseurl }}/">
-      <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="main-logo">
-    </a>
+    <!-- Kein Logo mehr hier -->
   </header>
+
   <div class="flex-container">
     <nav id="sidebar">
+      <!-- Logo GANZ OBEN in der Sidebar -->
+      <div class="sidebar-logo">
+        <a href="{{ site.baseurl }}/">
+          <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="sidebar-main-logo">
+        </a>
+      </div>
       <h2>Beiträge</h2>
       <ul class="sidebar-posts-list">
-  {% for post in site.posts %}
-    <li class="sidebar-post-item">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        
-        {% if post.image %}
-          <img src="{{ post.image }}" alt="Vorschaubild {{ post.title }}" class="sidebar-post-thumb">
-        {% endif %}
-        
-        <span class="sidebar-post-title">{{ post.title }}</span>
-        <span class="sidebar-post-date">{{ post.date | date: "%d.%m.%Y" }}</span>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
-
-      
+        {% for post in site.posts %}
+          <li class="sidebar-post-item">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+              {% if post.image %}
+                <img src="{{ post.image }}" alt="Vorschaubild {{ post.title }}" class="sidebar-post-thumb">
+              {% endif %}
+              <span class="sidebar-post-title">{{ post.title }}</span>
+              <span class="sidebar-post-date">{{ post.date | date: "%d.%m.%Y" }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
     </nav>
     <main>
       {{ content }}
     </main>
   </div>
+
   <footer class="footer">
-      <nav class="footer-nav">
-    <a href="{{ site.baseurl }}/home.html">Home</a>
-    <a href="{{ site.baseurl }}/blog.html">Blog</a>
-    <a href="{{ site.baseurl }}/about.html">About</a>
-    <a href="{{ site.baseurl }}/projects.html">My Projects</a>
-  </nav>
+    <nav class="footer-nav">
+      <a href="{{ site.baseurl }}/home.html">Home</a>
+      <a href="{{ site.baseurl }}/blog.html">Blog</a>
+      <a href="{{ site.baseurl }}/about.html">About</a>
+      <a href="{{ site.baseurl }}/projects.html">My Projects</a>
+    </nav>
     <div>
       &copy; {{ site.time | date: '%Y' }} Rubin Hood Blog &ndash; gebaut mit ❤️ und Jekyll
     </div>
   </footer>
+
   <script>
     // Sidebar-Button-Logik
     document.getElementById('sidebarToggle').addEventListener('click', function(e) {
