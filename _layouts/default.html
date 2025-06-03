@@ -51,13 +51,31 @@
 
   <footer class="footer">
     <nav class="footer-nav">
-      <a href="{{ site.baseurl }}/home.html">Home</a>
-      <a href="{{ site.baseurl }}/blog.html">Blog</a>
+      <a href="{{ site.baseurl }}/">Home</a>
       <a href="{{ site.baseurl }}/about.html">About</a>
       <a href="{{ site.baseurl }}/projects.html">My Projects</a>
     </nav>
+
+    <div class="footer-social">
+    <a href="https://github.com/rubin-hood" target="_blank" aria-label="GitHub">
+      <img src="../socialicons/github.png" alt="GitHub">
+    </a>
+    <a href="https://bsky.app/profile/rubin-hood.bsky.social" target="_blank" aria-label="Bluesky">
+      <img src="../socialicons/bluesky.png" alt="Bluesky">
+    </a>
+    <a href="https://medium.com/@rubin-hood" target="_blank" aria-label="Medium">
+      <img src="../socialicons/medium.png" alt="Medium">
+    </a>
+    <a href="https://codepen.io/rubin-hood" target="_blank" aria-label="CodePen">
+      <img src="../socialicons/codepen.png" alt="CodePen">
+    </a>
+    <a href="https://www.youtube.com/@Rubin-Hood/videos" target="_blank" aria-label="YouTube">
+      <img src="../socialicons/youtube.png" alt="YouTube">
+    </a>
+  </div>
+
     <div>
-      &copy; {{ site.time | date: '%Y' }} Rubin Hood Blog &ndash; gebaut mit ❤️ und Jekyll
+      &copy; {{ site.time | date: '%Y' }} Rubin Hood
     </div>
   </footer>
 
