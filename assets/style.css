@@ -21,8 +21,8 @@ html, body {
   width: 44px;                           /* Breite des Buttons */
   height: 44px;                          /* Höhe des Buttons */
   font-size: 2em;                        /* Schriftgröße (wird bei Symbolen/Icons relevant) */
-  background: #F6F5F1;                   /* Hintergrundfarbe (wie dein Seitenhintergrund) */
-  border: 1px solid #F6F5F1;             /* 1px Rahmen, gleiche Farbe wie Hintergrund (also unsichtbar) */
+  /* background: #F6F5F1;                   /* Hintergrundfarbe (wie dein Seitenhintergrund) */
+  /* border: 1px solid #F6F5F1;             /* 1px Rahmen, gleiche Farbe wie Hintergrund (also unsichtbar) */
   border-radius: 12px;                   /* Abgerundete Ecken */
   padding: 0.2em 0.6em;                  /* Innenabstand oben/unten 0.2em, rechts/links 0.6em */
   cursor: pointer;                       /* Zeiger als Cursor (zeigt Klickbarkeit) */
