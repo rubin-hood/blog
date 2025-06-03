@@ -59,9 +59,10 @@ html, body {
 .flex-container {
   display: flex;
   min-height: 100vh;
+  height: 100vh; /* GANZE Viewport-Höhe */
   width: 100vw;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: hidden; /* wichtig, damit kein Überlauf */
 }
 
 /* Sidebar-Logo oben im Sidebar */
