@@ -236,6 +236,12 @@ main {
   border-radius: 50%;
 }
 
+.footer-copyright {
+  margin-top: 1.5em;   /* Abstand nach oben, Wert nach Geschmack */
+  font-size: 1.07em;   /* optional */
+  color: #333;         /* optional */
+}
+
 
 
 
