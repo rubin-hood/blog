@@ -13,43 +13,47 @@ html, body {
 
 /* Hamburger-Menü-Button oben rechts */
 .sidebar-toggle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 7px;
-  width: 54px;
-  height: 54px;
-  font-size: 2em;
-  background: #F6F5F1;
-  border: 1px solid #F6F5F1;
-  border-radius: 12px;
-  padding: 0.2em 0.6em;
-  cursor: pointer;
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  z-index: 9999;
-  transition: background 0.18s, border 0.18s;
+  display: flex;                        /* Flexbox: Kinder (Balken) werden untereinander ausgerichtet */
+  flex-direction: column;                /* Balken (bars) werden vertikal angeordnet */
+  justify-content: center;               /* Vertikal zentrieren (entlang der Flexrichtung) */
+  align-items: center;                   /* Horizontal zentrieren */
+  gap: 7px;                              /* Abstand zwischen den einzelnen Balken */
+  width: 44px;                           /* Breite des Buttons */
+  height: 44px;                          /* Höhe des Buttons */
+  font-size: 2em;                        /* Schriftgröße (wird bei Symbolen/Icons relevant) */
+  background: #F6F5F1;                   /* Hintergrundfarbe (wie dein Seitenhintergrund) */
+  border: 1px solid #F6F5F1;             /* 1px Rahmen, gleiche Farbe wie Hintergrund (also unsichtbar) */
+  border-radius: 12px;                   /* Abgerundete Ecken */
+  padding: 0.2em 0.6em;                  /* Innenabstand oben/unten 0.2em, rechts/links 0.6em */
+  cursor: pointer;                       /* Zeiger als Cursor (zeigt Klickbarkeit) */
+  position: fixed;                       /* Bleibt immer oben rechts im Viewport sichtbar */
+  top: 16px;                             /* Abstand von oben (Viewport!) */
+  right: 16px;                           /* Abstand von rechts (Viewport!) */
+  z-index: 9999;                         /* Sehr weit oben in der Ebenenreihenfolge (überlappt fast alles) */
+  /* transition: background 0.18s, border 0.18s; /* Animiert Hintergrund und Rahmen bei Änderung */
 }
+
 .sidebar-toggle .bar {
-  width: 32px;
-  height: 4px;
-  background: #009C6C;
-  border-radius: 2px;
-  transition: all 0.3s cubic-bezier(.44,1.5,.5,1);
-  display: block;
+  width: 32px;                           /* Breite eines Balkens */
+  height: 4px;                           /* Höhe eines Balkens */
+  background: #009C6C;                   /* Farbe der Balken (dein Akzent-Grün) */
+  border-radius: 2px;                    /* Leicht abgerundete Enden */
+  transition: all 0.3s cubic-bezier(.44,1.5,.5,1); /* Animation für Transformationen */
+  display: block;                        /* Balken als Blockelement */
 }
+
+/* Zustand: Menü geöffnet (Button erhält Klasse .open) */
 .sidebar-toggle.open .bar:nth-child(1) {
-  transform: translateY(11px) rotate(45deg);
+  transform: translateY(11px) rotate(45deg); /* 1. Balken wird nach unten geschoben & gedreht (Teil vom "X") */
 }
 .sidebar-toggle.open .bar:nth-child(2) {
-  opacity: 0;
-  transform: scaleX(0.8);
+  opacity: 0;                               /* 2. Balken verschwindet */
+  transform: scaleX(0.8);                   /* (Optional) wird horizontal etwas gestaucht */
 }
 .sidebar-toggle.open .bar:nth-child(3) {
-  transform: translateY(-11px) rotate(-45deg);
+  transform: translateY(-11px) rotate(-45deg); /* 3. Balken wird nach oben geschoben & gedreht (anderer Teil vom "X") */
 }
+
 
 /* Flex-Layout: Sidebar und Main-Inhalt nebeneinander */
 .flex-container {
