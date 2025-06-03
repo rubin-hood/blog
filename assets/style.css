@@ -324,3 +324,28 @@ img {
   border-radius: 6px;
   box-shadow: 0 1px 5px rgba(20,60,110,0.13);
 }
+
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.footer-nav a {
+  color: #009C6C;
+  font-size: 1.07em;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  transition: color 0.18s, background 0.18s;
+}
+
+.footer-nav a:hover {
+  color: #B42017;
+  background: #eee;
+}
+
