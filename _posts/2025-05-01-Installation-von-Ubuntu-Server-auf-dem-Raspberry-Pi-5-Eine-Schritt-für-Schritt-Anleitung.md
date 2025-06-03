@@ -1,3 +1,8 @@
+---
+title: "Mein Beitrag"
+date: 2025-05-07
+image: "/blog/articles/raspberry/001.jpg"
+---
 
 ![](/blog/articles/raspberry/001.jpg)
 
