@@ -73,7 +73,7 @@ html, body {
   margin-top: 0.0em;
 }
 .sidebar-main-logo {
-  max-width: 140px;
+  max-width: 100px;
   height: auto;
   display: block;
 }
@@ -348,7 +348,7 @@ img {
 }
 
 .mobile-logo {
-  max-width: 120px;
+  max-width: 100px;
   height: auto;
   display: block;
 }
