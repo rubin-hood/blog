@@ -208,8 +208,6 @@ main {
 }
 
 
-
-
 .footer-social {
   display: flex;
   justify-content: center;
@@ -232,8 +230,8 @@ main {
 }
 
 .footer-social img {
-  width: 30px;
-  height: 30px;
+  width: 10px;
+  height: 10px;
   display: block;
   border-radius: 50%;
 }
@@ -360,5 +358,3 @@ img {
     display: none;
   }
 }
-
-
