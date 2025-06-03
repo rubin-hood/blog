@@ -13,6 +13,7 @@ html, body {
 
 /* Hamburger-Menü-Button oben rechts */
 .sidebar-toggle {
+  overflow: visible !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -337,3 +338,4 @@ img {
     display: none;
   }
 }
+
