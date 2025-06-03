@@ -1,4 +1,4 @@
-/* ====== Grundlayout: Body, Farben, Schrift ====== */
+/* Grundlayout: Body und generelle Textfarbe */
 html, body {
   margin: 0;
   padding: 0;
@@ -6,12 +6,12 @@ html, body {
   max-width: 100vw;
   overflow-x: hidden;
   box-sizing: border-box;
-  background: #F6F5F1;         /* Hintergrundfarbe überall */
-  color: #202020;              /* Standard-Textfarbe */
+  background: #F6F5F1;
+  color: #202020;
   font-family: system-ui, sans-serif;
 }
 
-/* ====== Hamburger-Menü-Button ====== */
+/* Hamburger-Menü-Button oben rechts */
 .sidebar-toggle {
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@ html, body {
   position: fixed;
   top: 16px;
   right: 16px;
-  z-index: 9999;                /* Immer ganz oben */
+  z-index: 9999;
   transition: background 0.18s, border 0.18s;
 }
 .sidebar-toggle .bar {
@@ -51,7 +51,7 @@ html, body {
   transform: translateY(-11px) rotate(-45deg);
 }
 
-/* ====== Container: Sidebar und Main-Inhalt ====== */
+/* Flex-Layout: Sidebar und Main-Inhalt nebeneinander */
 .flex-container {
   display: flex;
   min-height: 100vh;
@@ -60,32 +60,44 @@ html, body {
   overflow-x: hidden;
 }
 
-/* ====== Sidebar-Logo (Desktop) ====== */
+/* Sidebar-Logo oben im Sidebar */
 .sidebar-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1.2em;
-  margin-top: 0.7em;
+  margin-bottom: 1.5em;
+  margin-top: 0.0em;
 }
 .sidebar-main-logo {
   max-width: 140px;
   height: auto;
   display: block;
 }
-/* Sidebar-Logo auf Mobile NICHT anzeigen */
-@media (max-width: 700px) {
-  .sidebar-logo { display: none !important; }
+
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
 }
 
-/* ====== Sidebar ====== */
+/* Nur auf Mobilen Geräten: Sidebar-Logo ausblenden */
+@media (max-width: 700px) {
+  .sidebar-logo {
+    display: none !important;
+  }
+}
+
+
+/* Sidebar-Container */
 nav#sidebar {
-  width: 40vw;                       /* Breite auf Desktop */
+  width: 40vw;
   min-width: 140px;
   max-width: 100vw;
   background: #F6F5F1;
   border-right: 1px solid #D0C8C7;
-  padding: 2em 1em 1em 1.5em;        /* Abstand innen */
+  padding: 2em 1em 1em 1.5em;
   box-sizing: border-box;
   overflow-x: hidden;
   margin: 0;
@@ -93,28 +105,29 @@ nav#sidebar {
   height: auto;
   z-index: 120;
 }
-/* Abstand zwischen Border und Content im Sidebar (oben) */
+
+/* Pseudoelement erzeugt den Abstand oben */
 nav#sidebar::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  height: 1.5em;
+  height: 1.8em;      /* So hoch ist die Lücke! */
   width: 100%;
-  background: #F6F5F1;
-  z-index: 2;
+  background: #F6F5F1; /* Muss gleich dem Sidebar-Background sein */
+  z-index: 2;         /* Damit es über der Border liegt */
 }
 
-/* Überschrift im Sidebar */
+/* Überschrift im Sidebar (Beiträge) */
 nav h2 {
   font-size: 1.25em;
   margin-top: 0;
   font-weight: 400;
   letter-spacing: 0.2px;
-  color: #009C6C;             /* Überschrift-Farbe */
+  color: #009C6C;
 }
 
-/* ====== Sidebar: Beitragsliste ====== */
+/* Beitragsliste im Sidebar */
 .sidebar-posts-list {
   list-style: none;
   padding: 0;
@@ -137,7 +150,7 @@ nav h2 {
   padding: 2px 4px;
 }
 .sidebar-post-item a:hover {
-  color: #B42017;           /* Hover-Farbe */
+  color: #B42017;
   background: #f4f4f4;
 }
 .sidebar-post-title {
@@ -150,8 +163,15 @@ nav h2 {
   color: #aaa;
   opacity: 0.95;
 }
+.sidebar-post-thumb {
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(20,60,110,0.13);
+}
 
-/* ====== Main-Bereich ====== */
+/* Main-Bereich: Blog-Inhalte */
 main {
   flex: 1;
   min-width: 0;
@@ -163,7 +183,7 @@ main {
   background: #F6F5F1;
 }
 
-/* ====== Footer ====== */
+/* Footer-Bereich unten */
 .footer {
   width: 100vw;
   max-width: 100vw;
@@ -180,7 +200,7 @@ main {
   left: 0;
 }
 
-/* Footer Navigation (unten, zentral) */
+/* Footer Navigation */
 .footer-nav {
   display: flex;
   justify-content: center;
@@ -202,7 +222,7 @@ main {
   background: #eee;
 }
 
-/* ====== Bilder: Immer responsiv ====== */
+/* Alle Bilder responsiv */
 img {
   max-width: 100%;
   height: auto;
@@ -210,32 +230,7 @@ img {
   box-sizing: border-box;
 }
 
-/* ====== Mobile: Logo-Leiste oben ====== */
-.mobile-logo-bar {
-  display: none;                /* Desktop: ausblenden */
-  justify-content: center;
-  align-items: center;
-  padding: 0.7em 0 0.3em 0;
-  background: #F6F5F1;
-  z-index: 101;
-}
-.mobile-logo {
-  max-width: 120px;
-  height: auto;
-  display: block;
-}
-/* Nur auf Mobile zeigen */
-@media (max-width: 700px) {
-  .mobile-logo-bar {
-    display: flex;
-  }
-  /* Blende Logo aus, wenn Sidebar offen */
-  body.sidebar-open .mobile-logo-bar {
-    display: none;
-  }
-}
-
-/* ====== Mobile Sidebar: überlagert alles ====== */
+/* --------- Responsive Styles für Mobile --------- */
 @media (max-width: 700px) {
   .sidebar-toggle {
     width: 44px;
@@ -294,7 +289,7 @@ img {
   }
 }
 
-/* ====== Desktop Sidebar, Sidebar-Button ausblenden ====== */
+/* Desktop Sidebar */
 @media (min-width: 701px) {
   .sidebar-toggle {
     display: none !important;
@@ -311,5 +306,34 @@ img {
     margin: 0;
     max-width: 650vw;
     z-index: 120;
+  }
+}
+
+
+
+.mobile-logo-bar {
+  display: none;              /* Standard: ausblenden */
+  justify-content: center;
+  align-items: center;
+  padding: 0.7em 0 0.3em 0;
+  background: #F6F5F1;
+  z-index: 101;               /* über Sidebar */
+}
+
+.mobile-logo {
+  max-width: 120px;
+  height: auto;
+  display: block;
+}
+
+/* Nur auf Mobile zeigen */
+@media (max-width: 700px) {
+  .mobile-logo-bar {
+    display: flex;
+  }
+
+  /* Blende Logo aus, wenn Sidebar offen */
+  body.sidebar-open .mobile-logo-bar {
+    display: none;
   }
 }
