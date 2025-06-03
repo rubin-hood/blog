@@ -78,7 +78,6 @@ html, body {
 @media (max-width: 700px) {
   .sidebar-logo {
     display: none !important;
-    padding-left: 18px;
   }
 }
 
@@ -312,6 +311,7 @@ img {
   padding: 0.7em 0 0.3em 0;
   background: #F6F5F1;
   z-index: 101;               /* über Sidebar */
+  padding-left: 16px;
 }
 
 .mobile-logo {
