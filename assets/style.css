@@ -160,31 +160,10 @@ img {
   left: 0;
 }
 
-/* Sidebar Navigation */
-.sidebar-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3em;
-  margin-bottom: 2em;
-  margin-top: 0.1em;
-}
 
-.sidebar-nav a {
-  color: #202020;
-  font-size: 1.15em;
-  font-weight: normal;
-  text-decoration: none;
-  padding: 0.2em 0;
-  transition: color 0.15s, background 0.15s;
-  text-align: center;
-  border-radius: 4px;
-}
 
-.sidebar-nav a:hover,
-.sidebar-nav a:focus {
-  color: #B42017;
-  background: #f4f4f4;
-}
+
+
 
 /* Beitragsliste */
 .sidebar-posts-list {
@@ -348,4 +327,3 @@ img {
   color: #B42017;
   background: #eee;
 }
-
