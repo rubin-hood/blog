@@ -323,7 +323,8 @@ img {
     position: static;
     width: 40vw;
     min-width: 140px;
-    height: auto;
+    height: 100vh;
+    overflow-y: auto;
     box-shadow: none;
     transition: none;
     padding-top: 2em;
@@ -334,6 +335,15 @@ img {
   }
 }
 
+  .flex-container {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+    main {
+    height: 100vh;
+    overflow-y: auto;
+  }
 
 
 .mobile-logo-bar {
