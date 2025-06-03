@@ -364,3 +364,33 @@ img {
     display: none;
   }
 }
+
+/* Codeblock */
+
+pre {
+  background: #f4f4f4;      /* Heller Hintergrund */
+  color: #202020;           /* Dunkle Schrift */
+  padding: 1em;             /* Innenabstand */
+  border-radius: 6px;       /* Abgerundete Ecken */
+  font-size: 1em;
+  overflow-x: auto;         /* Bei langen Zeilen Scrollbar */
+  margin: 1.2em 0;          /* Abstand oben und unten */
+  font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", "Courier New", monospace; /* Monospace Schrift */
+}
+
+code {
+  background: #f7f7fa;      /* Leicht abweichender Hintergrund für Inline-Code */
+  color: #b42017;           /* Optional: Farbe für Inline-Code */
+  padding: 0.2em 0.4em;     /* Etwas Innenabstand */
+  border-radius: 3px;
+  font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", "Courier New", monospace;
+  font-size: 0.97em;
+}
+
+pre code {
+  background: none;         /* Im Codeblock kein doppelter Hintergrund */
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+  font-size: 1em;
+}
