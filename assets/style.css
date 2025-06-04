@@ -172,6 +172,7 @@ nav#sidebar::before {
 .sidebar-post-item.active {
   /* background: #009C6C;      /* sanftes Grün als Beispiel */
   border-color: #009C6C;    /* Rahmen grün, falls du Border hast */
+  border-radius: 8px;       /* Ecken abgerundet, z.B. mit 8px */
 }
 
 .sidebar-post-item.active .sidebar-post-title {
