@@ -125,6 +125,9 @@ nav#sidebar::before {
   align-items: center;
   gap: 0.6em;
   margin-bottom: 1em;
+  border: 2px solid transparent;   /* Standard: unsichtbar, aber reserviert Platz für Border */
+  border-radius: 12px;             /* Optional, wenn du alle abrunden willst */
+  transition: border-color 0.18s;  /* Für sanften Übergang */
 }
 .sidebar-post-item a {
   display: flex;
