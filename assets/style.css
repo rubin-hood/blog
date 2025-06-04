@@ -151,17 +151,11 @@ nav#sidebar::before {
   opacity: 0.95;
   margin: 0;
 }
-.sidebar-post-thumb {
-  width: 38px;
-  height: 38px;
-  object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 1px 5px rgba(48, 7, 230, 0.13); /*????*/
-}
+
 
 .sidebar-post-thumb {
-  width: 38px;
-  height: 38px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 6px;
   box-shadow: 0 1px 5px rgba(48, 7, 230, 0.13);
