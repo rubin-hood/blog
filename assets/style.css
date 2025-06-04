@@ -170,12 +170,12 @@ nav#sidebar::before {
 }
 
 .sidebar-post-item.active {
-  background: #c9c9c9;      /* sanftes Grün als Beispiel */
-  border-color: #535353;    /* Rahmen grün, falls du Border hast */
+  background: #009C6C;      /* sanftes Grün als Beispiel */
+  border-color: #009C6C;    /* Rahmen grün, falls du Border hast */
 }
 
 .sidebar-post-item.active .sidebar-post-title {
-  color: #333;           /* Titel grün */
+  color: #ffffff;           /* Titel grün */
   font-weight: 600;
 }
 
