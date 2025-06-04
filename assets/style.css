@@ -125,12 +125,6 @@ nav#sidebar::before {
   align-items: center;
   gap: 0.6em;
   margin-bottom: 1em;
-
-  border: 3px solid #000;   /* Schwarzer Rahmen */
-  margin-bottom: 1em;       /* Abstand zwischen den Cards */
-  padding: 0.7em 1em;       /* Etwas Luft innen, nach Geschmack */
-  background: transparent;  /* Kein Hintergrund, außer du möchtest */
-  border-radius: 0;         /* Keine Rundungen */
 }
 .sidebar-post-item a {
   display: flex;
@@ -174,6 +168,17 @@ nav#sidebar::before {
   align-items: flex-start;
   line-height: 1.2;
 }
+
+.sidebar-post-item.active {
+  background: #e8f8f2;      /* sanftes Grün als Beispiel */
+  border-color: #009C6C;    /* Rahmen grün, falls du Border hast */
+}
+
+.sidebar-post-item.active .sidebar-post-title {
+  color: #009C6C;           /* Titel grün */
+  font-weight: 600;
+}
+
 
 /* Main-Bereich: Blog-Inhalte */
 main {
