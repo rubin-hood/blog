@@ -52,7 +52,7 @@ Der Raspberry Pi 5 ist ein leistungsstarker Einplatinencomputer, der sich hervor
 3. Schließen Sie die Stromversorgung an, um den Raspberry Pi 5 zu starten.
 4. Warten Sie einige Minuten, bis das System vollständig gebootet ist.
 
-![](../articles/Raspberry-Pi/005.jpg)
+![](/blog/_posts/raspberry/005.jpg)
 
 ## Schritt 4: Verbindung zum Ubuntu Server herstellen
 
@@ -95,4 +95,4 @@ Glückwunsch! Sie haben erfolgreich Ubuntu Server auf Ihrem Raspberry Pi 5 insta
 
 Denken Sie daran, Ihr System regelmäßig zu aktualisieren und die Sicherheitseinstellungen an Ihre Bedürfnisse anzupassen. Viel Spaß beim Experimentieren und Lernen mit Ihrem neuen Ubuntu Server auf dem Raspberry Pi 5!
 
-![](../articles/Raspberry-Pi/006.jpg)
+![](blog/_posts/raspberry/006.jpg)
