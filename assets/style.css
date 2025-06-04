@@ -125,8 +125,8 @@ nav#sidebar::before {
   align-items: center;
   gap: 0.6em;
   margin-bottom: 1em;
-  border: 2px solid transparent;   /* Standard: unsichtbar, aber reserviert Platz für Border */
-  border-radius: 12px;             /* Optional, wenn du alle abrunden willst */
+  border: 1px solid transparent;   /* Standard: unsichtbar, aber reserviert Platz für Border */
+  border-radius: 7px;             /* Optional, wenn du alle abrunden willst */
   transition: border-color 0.18s;  /* Für sanften Übergang */
 }
 .sidebar-post-item a {
@@ -174,7 +174,7 @@ nav#sidebar::before {
 
 .sidebar-post-item.active {
   /* background: #009C6C;      /* sanftes Grün als Beispiel */
-  border-color: #aaa;    /* Rahmen grün, falls du Border hast */
+  border-color: #009C6C;    /* Rahmen grün, falls du Border hast */
   border-radius: 8px;       /* Ecken abgerundet, z.B. mit 8px */
 }
 
