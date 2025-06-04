@@ -170,7 +170,7 @@ nav#sidebar::before {
 }
 
 .sidebar-post-item.active {
-  background: #009C6C;      /* sanftes Grün als Beispiel */
+  /* background: #009C6C;      /* sanftes Grün als Beispiel */
   border-color: #009C6C;    /* Rahmen grün, falls du Border hast */
 }
 
