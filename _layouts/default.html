@@ -30,19 +30,21 @@
           <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="sidebar-main-logo">
         </a>
       </div>
-      <ul class="sidebar-posts-list">
-        {% for post in site.posts %}
-          <li class="sidebar-post-item">
-            <a href="{{ site.baseurl }}{{ post.url }}">
-              {% if post.image %}
-                <img src="{{ post.image }}" alt="Vorschaubild {{ post.title }}" class="sidebar-post-thumb">
-              {% endif %}
-              <span class="sidebar-post-title">{{ post.title }}</span>
-              <span class="sidebar-post-date">{{ post.date | date: "%d.%m.%Y" }}</span>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
+<ul class="sidebar-posts-list">
+  {% for post in site.posts %}
+    <li class="sidebar-post-item">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {% if post.image %}
+          <img src="{{ post.image }}" alt="Vorschaubild {{ post.title }}" class="sidebar-post-thumb">
+        {% endif %}
+        <span class="sidebar-post-texts">
+          <span class="sidebar-post-title">{{ post.title }}</span>
+          <span class="sidebar-post-date">{{ post.date | date: "%d.%m.%Y" }}</span>
+        </span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
     </nav>
     <main>
       {{ content }}
