@@ -1,397 +1,122 @@
-/* Grundlayout: Body und generelle Textfarbe */
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  max-width: 100vw;
-  overflow-x: hidden;
-  box-sizing: border-box;
-  background: #F6F5F1;
-  color: #333;
-  font-family: system-ui, sans-serif;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+</head>
+<body>
 
-/* Hamburger-Menü-Button oben rechts */
-.sidebar-toggle {
-  display: flex;                        /* Flexbox: Kinder (Balken) werden untereinander ausgerichtet */
-  flex-direction: column;                /* Balken (bars) werden vertikal angeordnet */
-  justify-content: center;               /* Vertikal zentrieren (entlang der Flexrichtung) */
-  align-items: center;                   /* Horizontal zentrieren */
-  gap: 7px;                              /* Abstand zwischen den einzelnen Balken */
-  width: 44px;                           /* Breite des Buttons */
-  height: 44px;                          /* Höhe des Buttons */
-  font-size: 2em;                        /* Schriftgröße (wird bei Symbolen/Icons relevant) */
-  background: transparent;                   /* Hintergrundfarbe (wie dein Seitenhintergrund) */
-  border: 1px solid transparent;             /* 1px Rahmen, gleiche Farbe wie Hintergrund (also unsichtbar) */
-  border-radius: 12px;                   /* Abgerundete Ecken */
-  padding: 0.2em 0.6em;                  /* Innenabstand oben/unten 0.2em, rechts/links 0.6em */
-  cursor: pointer;                       /* Zeiger als Cursor (zeigt Klickbarkeit) */
-  position: fixed;                       /* Bleibt immer oben rechts im Viewport sichtbar */
-  top: 16px;                             /* Abstand von oben (Viewport!) */
-  right: 16px;                           /* Abstand von rechts (Viewport!) */
-  z-index: 9999;                         /* Sehr weit oben in der Ebenenreihenfolge (überlappt fast alles) */
-  /* transition: background 0.18s, border 0.18s; /* Animiert Hintergrund und Rahmen bei Änderung */
-}
+  <div class="mobile-logo-bar">
+    <a href="{{ site.baseurl }}/">
+  <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="mobile-logo">
+  </a>
+</div>
 
-.sidebar-toggle .bar {
-  width: 32px;                           /* Breite eines Balkens */
-  height: 4px;                           /* Höhe eines Balkens */
-  background: #009C6C;                   /* Farbe der Balken (dein Akzent-Grün) */
-  border-radius: 2px;                    /* Leicht abgerundete Enden */
-  transition: all 0.3s cubic-bezier(.44,1.5,.5,1); /* Animation für Transformationen */
-  display: block;                        /* Balken als Blockelement */
-}
+  <!-- Hamburger-Button bleibt stehen! -->
+  <button class="sidebar-toggle" id="sidebarToggle" aria-label="Menü öffnen">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
 
-/* Zustand: Menü geöffnet (Button erhält Klasse .open) */
-.sidebar-toggle.open .bar:nth-child(1) {
-  transform: translateY(11px) rotate(45deg); /* 1. Balken wird nach unten geschoben & gedreht (Teil vom "X") */
-}
-.sidebar-toggle.open .bar:nth-child(2) {
-  opacity: 0;                               /* 2. Balken verschwindet */
-  transform: scaleX(0.8);                   /* (Optional) wird horizontal etwas gestaucht */
-}
-.sidebar-toggle.open .bar:nth-child(3) {
-  transform: translateY(-11px) rotate(-45deg); /* 3. Balken wird nach oben geschoben & gedreht (anderer Teil vom "X") */
-}
+  <!-- <header class="top-logo-header"> … </header>  <--- Das KOMPLETT LÖSCHEN -->
 
+  <div class="flex-container">
+    <nav id="sidebar">
+      <div class="sidebar-logo">
+        <a href="{{ site.baseurl }}/">
+          <img src="{{ site.baseurl }}/assets/logo.png" alt="Logo" class="sidebar-main-logo">
+        </a>
+      </div>
+<ul class="sidebar-posts-list">
+  {% for post in site.posts %}
+    <li class="sidebar-post-item">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {% if post.image %}
+          <img src="{{ post.image }}" alt="Vorschaubild {{ post.title }}" class="sidebar-post-thumb">
+        {% endif %}
+        <span class="sidebar-post-texts">
+          <span class="sidebar-post-title">{{ post.title }}</span>
+          <span class="sidebar-post-date">{{ post.date | date: "%d.%m.%Y" }}</span>
+        </span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+    </nav>
+    <main>
+      {{ content }}
+    </main>
+  </div>
 
-/* Flex-Layout: Sidebar und Main-Inhalt nebeneinander */
-.flex-container {
-  display: flex;
-  min-height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
+  <footer class="footer">
+    <nav class="footer-nav">
+      <a href="{{ site.baseurl }}/">Home</a>
+      <a href="{{ site.baseurl }}/about.html">About</a>
+      <a href="{{ site.baseurl }}/projects.html">My Projects</a>
+    </nav>
 
-/* Sidebar-Logo oben im Sidebar */
-.sidebar-logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 1.5em;
-  margin-top: 0.0em;
-}
-.sidebar-main-logo {
-  max-width: 100px;
-  height: auto;
-  display: block;
-}
+    <div class="footer-social">
+    <a href="https://github.com/rubin-hood" target="_blank" aria-label="GitHub">
+      <img src="/blog/socialicons/github.png" alt="GitHub">
+    </a>
+    <a href="https://bsky.app/profile/rubin-hood.bsky.social" target="_blank" aria-label="Bluesky">
+      <img src="/blog/socialicons/bluesky.png" alt="Bluesky">
+    </a>
+    <a href="https://medium.com/@rubin-hood" target="_blank" aria-label="Medium">
+      <img src="/blog/socialicons/medium.png" alt="Medium">
+    </a>
+    <a href="https://codepen.io/rubin-hood" target="_blank" aria-label="CodePen">
+      <img src="/blog/socialicons/codepen.png" alt="CodePen">
+    </a>
+    <a href="https://www.youtube.com/@Rubin-Hood/videos" target="_blank" aria-label="YouTube">
+      <img src="/blog/socialicons/youtube.png" alt="YouTube">
+    </a>
+  </div>
 
-/* Nur auf Mobilen Geräten: Sidebar-Logo ausblenden */
-@media (max-width: 700px) {
-  .sidebar-logo {
-    display: none !important;
-  }
-}
+    <div class="footer-copyright">
+      &copy; {{ site.time | date: '%Y' }} Rubin Hood
+    </div>
+  </footer>
 
+  <script>
+    // Sidebar-Button-Logik
+    document.getElementById('sidebarToggle').addEventListener('click', function(e) {
+      e.stopPropagation();
+      document.getElementById('sidebar').classList.toggle('open');
+      this.classList.toggle('open');
+      document.body.classList.toggle('sidebar-open');
+    });
 
-/* Sidebar-Container */
-nav#sidebar {
-  width: 40vw;
-  min-width: 140px;
-  max-width: 100vw;
-  background: #F6F5F1;
-  border-right: 1px solid #d6d5d5;
-  padding: 2em 1em 1em 1.5em;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  margin: 0;
-  position: relative;
-  height: auto;
-  z-index: 120;
-}
+    // Schließen bei Klick außerhalb
+    document.addEventListener('click', function(e) {
+      var sidebar = document.getElementById('sidebar');
+      var toggle = document.getElementById('sidebarToggle');
+      if (
+        sidebar.classList.contains('open') &&
+        !sidebar.contains(e.target) &&
+        !toggle.contains(e.target)
+      ) {
+        sidebar.classList.remove('open');
+        toggle.classList.remove('open');
+        document.body.classList.remove('sidebar-open');
+      }
+    });
 
-/* Pseudoelement erzeugt den Abstand oben */
-nav#sidebar::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 1.8em;      /* So hoch ist die Lücke! */
-  width: 100%;
-  background: #F6F5F1; /* Muss gleich dem Sidebar-Background sein */
-  z-index: 2;         /* Damit es über der Border liegt */
-}
-
-/* Beitragsliste im Sidebar */
-.sidebar-posts-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.sidebar-post-item {
-  display: flex;
-  align-items: center;
-  gap: 0.6em;
-  margin-bottom: 1em;
-}
-.sidebar-post-item a {
-  display: flex;
-  align-items: center;
-  gap: 0.6em;
-  text-decoration: none;
-  color: #333;
-  transition: color 0.15s, background 0.15s;
-  border-radius: 4px;
-  padding: 2px 4px;
-}
-.sidebar-post-item a:hover {
-  color: #B42017;
-}
-.sidebar-post-title {
-  font-weight: 400;
-  font-size: 1em;
-  margin-right: 0.5em;
-}
-.sidebar-post-date {
-  font-size: 0.93em;
-  color: #aaa;
-  opacity: 0.95;
-}
-.sidebar-post-thumb {
-  width: 38px;
-  height: 38px;
-  object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 1px 5px rgba(48, 7, 230, 0.13); /*????*/
-}
-
-/* Main-Bereich: Blog-Inhalte */
-main {
-  flex: 1;
-  min-width: 0;
-  padding: 2em 3vw;
-  max-width: 700px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  background: #F6F5F1;
-}
-
-/* Footer-Bereich unten */
-.footer {
-  width: 100vw;
-  max-width: 100vw;
-  margin: 0;
-  box-sizing: border-box;
-  background: #F6F5F1;
-  color: #333;
-  border-top: 1px solid #F6F5F1;
-  text-align: center;
-  font-size: 1em;
-  padding: 1.2em 2vw;
-  letter-spacing: 0.01em;
-  position: relative;
-  left: 0;
-}
-
-/* Footer Navigation */
-.footer-nav {
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-}
-.footer-nav a {
-  color: #009C6C;
-  font-size: 1.07em;
-  font-weight: 400;
-  text-decoration: none;
-  padding: 0.15em 0.4em;
-  border-radius: 4px;
-  transition: color 0.18s, background 0.18s;
-}
-.footer-nav a:hover {
-  color: #B42017;
-}
-
-
-.footer-social {
-  display: flex;
-  justify-content: center;
-  gap: 1.2em;
-  margin-top: 0.8em;
-}
-
-.footer-social a {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 50%;
-  transition: background 0.18s, box-shadow 0.18s;
-  padding: 4px;
-}
-
-.footer-social a:hover,
-.footer-social a:focus {
-  background: #f2f2f2;
-  box-shadow: 0 2px 8px rgba(30,60,120,0.07);
-}
-
-.footer-social img {
-  width: 20px;
-  height: 20px;
-  display: block;
-  border-radius: 50%;
-}
-
-.footer-copyright {
-  margin-top: 1.5em;   /* Abstand nach oben, Wert nach Geschmack */
-  font-size: 1.07em;   /* optional */
-  color: #333;         /* optional */
-}
-
-
-
-
-
-
-/* Alle Bilder responsiv */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  box-sizing: border-box;
-}
-
-/* --------- Responsive Styles für Mobile --------- */
-@media (max-width: 700px) {
-  .sidebar-toggle {
-    position: absolute;
-    width: 44px;
-    height: 44px;
-    top: 8px;
-    right: 8px;
-    z-index: 9999;
-  }
-  .flex-container {
-    flex-direction: column;
-    width: 100vw;
-    max-width: 100vw;
-  }
-  nav#sidebar {
-    position: fixed;
-    left: -100vw;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    max-width: 100vw;
-    max-height: 100vh;
-    z-index: 1200;
-    background: #F6F5F1;
-    border: none;
-    box-shadow: 2px 0 6px rgba(0,0,0,0.03);
-    transition: left 0.25s;
-    padding-top: 4em;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    box-sizing: border-box;
-    overflow-y: auto;
-    overflow-x: hidden;
-    margin: 0;
-  }
-  nav#sidebar.open {
-    left: 0;
-  }
-  main {
-    padding: 1em 2vw;
-    max-width: 100vw;
-  }
-  nav h2 {
-    font-size: 1.05em;
-  }
-  body.sidebar-open::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.05);
-    z-index: 900;
-  }
-  .footer {
-    font-size: 0.97em;
-    padding: 1em 2vw;
-    text-align: center;
-  }
-}
-
-/* Desktop Sidebar */
-@media (min-width: 701px) {
-  .sidebar-toggle {
-    display: none !important;
-  }
-  nav#sidebar {
-    position: static;
-    width: 40vw;
-    min-width: 140px;
-    height: auto;
-    box-shadow: none;
-    transition: none;
-    padding-top: 2em;
-    box-sizing: border-box;
-    margin: 0;
-    max-width: 650vw;
-    z-index: 120;
-  }
-}
-
-
-
-.mobile-logo-bar {
-  display: none;              /* Standard: ausblenden */
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0.7em 0 0.3em 0;
-  background: #F6F5F1;
-  z-index: 101;               /* über Sidebar */
-  padding-left: 16px;
-}
-
-.mobile-logo {
-  max-width: 100px;
-  height: auto;
-  display: block;
-}
-
-/* Nur auf Mobile zeigen */
-@media (max-width: 700px) {
-  .mobile-logo-bar {
-    display: flex;
-  }
-
-  /* Blende Logo aus, wenn Sidebar offen */
-  body.sidebar-open .mobile-logo-bar {
-    display: none;
-  }
-}
-
-/* Codeblock */
-
-pre {
-  background: #cecece;      /* Heller Hintergrund */
-  color: #202020;           /* Dunkle Schrift */
-  padding: 1em;             /* Innenabstand */
-  border-radius: 6px;       /* Abgerundete Ecken */
-  font-size: 1em;
-  overflow-x: auto;         /* Bei langen Zeilen Scrollbar */
-  margin: 1.2em 0;          /* Abstand oben und unten */
-  font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", "Courier New", monospace; /* Monospace Schrift */
-}
-
-code {
-  background: #b7b7b7;      /* Leicht abweichender Hintergrund für Inline-Code */
-  color: #b42017;           /* Optional: Farbe für Inline-Code */
-  padding: 0.2em 0.4em;     /* Etwas Innenabstand */
-  border-radius: 3px;
-  font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", "Courier New", monospace;
-  font-size: 0.97em;
-}
-
-pre code {
-  background: none;         /* Im Codeblock kein doppelter Hintergrund */
-  color: inherit;
-  padding: 0;
-  border-radius: 0;
-  font-size: 1em;
-}
-
+    // Schließen bei Link-Klick
+    document.addEventListener('DOMContentLoaded', function(){
+      document.querySelectorAll('#sidebar a').forEach(function(link){
+        link.addEventListener('click', function(){
+          if(window.innerWidth <= 700){
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('sidebarToggle').classList.remove('open');
+            document.body.classList.remove('sidebar-open');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
