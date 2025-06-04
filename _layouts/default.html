@@ -32,7 +32,7 @@
       </div>
 <ul class="sidebar-posts-list">
   {% for post in site.posts %}
-    <li class="sidebar-post-item">
+    <li class="sidebar-post-item{% if page.url == post.url %} active{% endif %}">
       <a href="{{ site.baseurl }}{{ post.url }}">
         {% if post.image %}
           <img src="{{ post.image }}" alt="Vorschaubild {{ post.title }}" class="sidebar-post-thumb">
