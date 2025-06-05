@@ -232,7 +232,7 @@ main {
 .footer-nav {
   display: flex;
   justify-content: center;
-  gap: 2em;
+  gap: 0.8em;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 }
@@ -253,7 +253,7 @@ main {
 .footer-social {
   display: flex;
   justify-content: center;
-  gap: 1.2em;
+  gap: 1em;
   margin-top: 0.8em;
 }
 
