@@ -11,6 +11,21 @@ html, body {
   font-family: system-ui, sans-serif;
 }
 
+/* H2-Überschriften */
+h2 {
+  color: #009C6C;
+}
+
+/* Standard-Links */
+a {
+  color: #B42017;
+  text-decoration: underline; /* optional, damit klar ist, es ist ein Link */
+}
+
+a:hover, a:focus {
+  color: #009C6C; /* optional: Hover-Grün wie dein Schema */
+}
+
 /* Hamburger-Menü-Button oben rechts */
 .sidebar-toggle {
   display: flex;                        /* Flexbox: Kinder (Balken) werden untereinander ausgerichtet */
