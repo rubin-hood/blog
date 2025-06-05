@@ -122,6 +122,21 @@
         });
       });
     });
+
+    document.querySelectorAll('.footer-social img').forEach(function(img){
+  // Ursprüngliche Quelle merken
+  const origSrc = img.src;
+  const altSrc = img.getAttribute('data-alt');
+  if(!altSrc) return; // Falls kein Alternativbild, überspringen
+
+  img.addEventListener('mouseenter', function(){
+    img.src = altSrc;
+  });
+  img.addEventListener('mouseleave', function(){
+    img.src = origSrc;
+  });
+});
+
   </script>
 </body>
 </html>
