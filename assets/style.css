@@ -52,7 +52,7 @@ a:hover, a:focus {
   width: 32px;                           /* Breite eines Balkens */
   height: 4px;                           /* Höhe eines Balkens */
   background: #009C6C;                   /* Farbe der Balken (dein Akzent-Grün) */
-  border-radius: 6px;                    /* Leicht abgerundete Enden */
+  border-radius: 2px;                    /* Leicht abgerundete Enden */
   transition: all 0.3s cubic-bezier(.44,1.5,.5,1); /* Animation für Transformationen */
   display: block;                        /* Balken als Blockelement */
 }
@@ -232,7 +232,7 @@ main {
 .footer-nav {
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: 2em;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 }
@@ -253,7 +253,7 @@ main {
 .footer-social {
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: 1.2em;
   margin-top: 0.8em;
 }
 
