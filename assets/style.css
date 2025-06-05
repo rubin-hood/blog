@@ -189,7 +189,7 @@ nav#sidebar::before {
 
 .sidebar-post-item.active {
   background: #FCFBF7;      /* sanftes Grün als Beispiel */
-  border: 2px solid #d7d7d7;;    /* Rahmen grün, falls du Border hast */
+  border: 1px solid #d7d7d7;;    /* Rahmen grün, falls du Border hast */
   border-radius: 7px;       /* Ecken abgerundet, z.B. mit 8px */
 }
 
