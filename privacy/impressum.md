@@ -1,4 +1,6 @@
-## Impressum
+---
+title: Impressum
+---
 
 Andreas Rubin  
 Berner Str. 1  
