@@ -1,4 +1,4 @@
-
+# Datenschutzerklärung
 
 ## Allgemeine Hinweise
 Der Schutz Ihrer persönlichen Daten ist mir ein wichtiges Anliegen. Diese Website erhebt und speichert **keine personenbezogenen Daten** und verwendet **keine Cookies** oder Analyse-Tools.
