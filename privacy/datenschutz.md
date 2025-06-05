@@ -1,88 +1,97 @@
-# Datenschutzerklärung
 
-## 1. Allgemeine Hinweise
 
-Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Diese Datenschutzerklärung informiert Sie darüber, wie wir personenbezogene Daten auf unserer Webseite erheben, verarbeiten und speichern.
+## Allgemeine Hinweise
+Der Schutz Ihrer persönlichen Daten ist mir ein wichtiges Anliegen. Diese Website erhebt und speichert **keine personenbezogenen Daten** und verwendet **keine Cookies** oder Analyse-Tools.
 
-## 2. Verantwortlicher für die Datenverarbeitung
-
-Verantwortlich für die Erhebung, Verarbeitung und Nutzung Ihrer personenbezogenen Daten im Sinne der DSGVO ist:
-
+## Verantwortlicher für die Datenverarbeitung
 Andreas Rubin  
 Berner Str. 1  
 70619 Stuttgart  
 Telefon: +49 155 60926238  
 E-Mail: andreasrubin[at]gmx[dot]de
 
-Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.
+## Erhebung und Speicherung personenbezogener Daten
+Beim Besuch dieser Website werden **keine personenbezogenen Daten** gespeichert oder verarbeitet. Es findet kein Tracking statt. Es werden keine Cookies gesetzt.
 
-## 3. Hosting und Infrastruktur
+## Server-Log-Dateien
+Der Hosting-Provider dieser Website erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien, die Ihr Browser automatisch übermittelt. Diese Daten umfassen beispielsweise:
 
-Diese Website wird auf einem eigenen Server gehostet:
+- Browsertyp und Browserversion
+- Verwendetes Betriebssystem
+- Referrer URL
+- Hostname des zugreifenden Rechners
+- Uhrzeit der Serveranfrage
 
+Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
 
-**Server:** Raspberry Pi 5
-**Standort:** Berner Str. 1, 70619 Stuttgart
+## Hosting
+Diese Website wird bei **GitHub Pages** gehostet. Anbieter ist die GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.
 
-Die Datenverarbeitung erfolgt lokal, wodurch ein hohes Maß an Datenschutz und Sicherheit gewährleistet wird.
+Beim Besuch der Website werden automatisch Verbindungsdaten (z.B. IP-Adresse, Datum und Uhrzeit des Zugriffs) in sogenannten Server-Logfiles gespeichert. Diese Daten werden ausschließlich zur Aufrechterhaltung des Serverbetriebs und zu Sicherheitszwecken verarbeitet. Eine Zusammenführung dieser Daten mit anderen Datenquellen findet nicht statt.
 
-## 4. Erhebung und Speicherung personenbezogener Daten
+GitHub verarbeitet personenbezogene Daten gemäß ihrer [Datenschutzerklärung](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
 
-### Protokollierung im Logfile `visitor_log.log`
+## Plugins und Tools
+Diese Website verwendet keine externen Plugins oder Tools wie Google Analytics, Social Media Plugins oder eingebettete Inhalte (z.B. YouTube).
 
-Beim Besuch unserer Website werden folgende Daten erfasst und in der Datei `visitor_log.log` gespeichert:
+## Ihre Rechte
+Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung. Außerdem haben Sie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.
 
-**IP-Adresse des anfragenden Rechners:** anonymisiert, falls Cookies abgelehnt wurden
-**Datum und Uhrzeit des Zugriffs**
-**Entscheidung des Besuchers:** Zum Beispiel "nur Besuch", "Cookie abgelehnt", "Cookie zugestimmt".
-**Besuchte Seiten-URLs:** falls der Verwendung von Cookies zugestimmt wurde.
+Für Fragen zum Thema Datenschutz können Sie sich jederzeit unter der oben angegebenen Adresse an mich wenden.
 
-**Beispielhafte Speicherung:**
+## Änderungen dieser Datenschutzerklärung
+Ich behalte mir vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.
 
-46.89.XXX.XXX, 09.01.2025 09:17:01, nur Besuch  
-46.89.XXX.XXX, 09.01.2025 09:17:02, Cookie abgelehnt  
-46.89.41.53, 09.01.2025 09:17:08, Cookie zugestimmt  
-46.89.41.53, 09.01.2025 09:17:12, https://rubin-hood.com/index.php  
-46.89.41.53, 09.01.2025 09:17:15, https://rubin-hood.com/navigation/blog.php  
-46.89.41.53, 09.01.2025 09:17:18, https://rubin-hood.com/navigation/blog.php?article=vCenter-7  
+---
 
-Diese Daten werden ausschließlich zu technischen Zwecken sowie zur Sicherstellung des einwandfreien Betriebs unserer Website verwendet.
+*Stand: Juni 2025*
 
-## Speicherdauer
+---
 
-Die Daten werden nach 90 Tagen automatisch gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
+# Privacy Policy
 
-## 5. Sicherheit und Verschlüsselung
+## General Information
+The protection of your personal data is important to me. This website does **not collect or store personal data** and does **not use cookies** or analytics tools.
 
-Wir verwenden **SSL-/TLS-Verschlüsselung**, um Ihre Daten während der Übertragung zu schützen. Eine verschlüsselte Verbindung erkennen Sie an "`https://`" in der Adresszeile Ihres Browsers.
+## Data Controller
+Andreas Rubin  
+Berner Str. 1  
+70619 Stuttgart  
+Phone: +49 155 60926238  
+Email: andreasrubin[at]gmx[dot]de
 
-Bitte beachten Sie, dass die Datenübertragung im Internet, beispielsweise bei der Kommunikation per E-Mail, Sicherheitsrisiken bergen kann. Ein vollständiger Schutz der Daten vor dem Zugriff durch unbefugte Dritte kann nicht garantiert werden.
+## Collection and Storage of Personal Data
+When you visit this website, **no personal data** is collected or processed. No tracking is carried out. No cookies are set.
 
-## 6. Cookies und ähnliche Technologien
+## Server Log Files
+The hosting provider of this website automatically collects and stores information in so-called server log files, which your browser automatically transmits. These include:
 
-Unsere Website verwendet keine Cookies, es sei denn, Sie stimmen ihrer Nutzung explizit zu. Sollten Sie zustimmen, können Cookies temporär Informationen speichern, wie z. B. Ihre Entscheidung ("accepted" oder "declined").
+- Browser type and version
+- Operating system used
+- Referrer URL
+- Hostname of the accessing computer
+- Time of the server request
 
-### Cookie-Management
+These data cannot be assigned to specific persons. A combination of these data with other data sources is not carried out.
 
-Sie können Ihre Cookie-Einstellungen jederzeit über die entsprechenden Funktionen Ihres Browsers oder über die Cookie-Einstellungen auf unserer Website ändern.
+## Hosting
+This website is hosted by **GitHub Pages**. The provider is GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.
 
-## 7. Keine Nutzung von Analyse-Tools oder Drittanbietern
+When visiting the website, connection data (e.g., IP address, date, and time of access) is automatically stored in server log files. These data are processed exclusively to maintain server operations and for security purposes. These data are not merged with other data sources.
 
-Auf dieser Website werden keine Analyse-Tools oder Drittanbieter-Dienste wie Google Analytics verwendet. Es findet keine statistische Auswertung Ihres Nutzungsverhaltens statt.
+GitHub processes personal data in accordance with their [Privacy Policy](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
 
-## 8. Rechte der Nutzer
+## Plugins and Tools
+This website does not use external plugins or tools such as Google Analytics, social media plugins, or embedded content (e.g., YouTube).
 
-Gemäß DSGVO haben Sie folgende Rechte:
+## Your Rights
+You have the right to request information at any time about your stored personal data, their origin and recipient, and the purpose of data processing. You also have the right to rectification, blocking, or deletion of these data.
 
-**Auskunft (Art. 15 DSGVO):** Sie können Informationen über die von uns gespeicherten Daten anfordern.
-**Berichtigung (Art. 16 DSGVO):** Sie können die Korrektur unrichtiger oder unvollständiger Daten verlangen.
-**Löschung (Art. 17 DSGVO):** Sie können die Löschung Ihrer Daten fordern, sofern keine gesetzlichen Aufbewahrungsfristen bestehen.
-**Einschränkung (Art. 18 DSGVO):** Sie können die Verarbeitung Ihrer Daten unter bestimmten Voraussetzungen einschränken.
-**Datenübertragbarkeit (Art. 20 DSGVO):** Sie haben das Recht, Ihre Daten in einem maschinenlesbaren Format zu erhalten.
-**Widerspruch (Art. 21 DSGVO):** Sie können der Verarbeitung Ihrer Daten widersprechen.
+If you have any questions about data protection, you can contact me at the address provided above.
 
-Zur Ausübung Ihrer Rechte kontaktieren Sie uns bitte unter andreasrubin[at]gmx[dot]de
+## Changes to this Privacy Policy
+I reserve the right to update this privacy policy from time to time to comply with current legal requirements.
 
-## 9. Änderungen der Datenschutzerklärung
+---
 
-Wir behalten uns vor, diese Datenschutzerklärung regelmäßig zu prüfen und zu aktualisieren, um sie an Änderungen rechtlicher oder technischer Anforderungen anzupassen. Über wesentliche Änderungen werden wir auf unserer Website informieren.
+*Last update: June 2025*
