@@ -65,20 +65,23 @@
 
     <div class="footer-social">
     <a href="https://github.com/rubin-hood" target="_blank" aria-label="GitHub">
-      <img src="/blog/socialicons/github.png" alt="GitHub">
+      <img src="/blog/socialicons/github.png" alt="GitHub" data-alt="/blog/socialicons/github2.png">
     </a>
     <a href="https://bsky.app/profile/rubin-hood.bsky.social" target="_blank" aria-label="Bluesky">
-      <img src="/blog/socialicons/bluesky.png" alt="Bluesky">
+      <img src="/blog/socialicons/bluesky.png" alt="Bluesky" data-alt="/blog/socialicons/bluesky2.png">
     </a>
     <a href="https://medium.com/@rubin-hood" target="_blank" aria-label="Medium">
-      <img src="/blog/socialicons/medium.png" alt="Medium">
+      <img src="/blog/socialicons/medium.png" alt="Medium" data-alt="/blog/socialicons/medium2.png">
     </a>
     <a href="https://codepen.io/rubin-hood" target="_blank" aria-label="CodePen">
-      <img src="/blog/socialicons/codepen.png" alt="CodePen">
+      <img src="/blog/socialicons/codepen.png" alt="CodePen" data-alt="/blog/socialicons/codepen2.png">
     </a>
     <a href="https://www.youtube.com/@Rubin-Hood/videos" target="_blank" aria-label="YouTube">
-      <img src="/blog/socialicons/youtube.png" alt="YouTube">
+      <img src="/blog/socialicons/youtube.png" alt="YouTube" data-alt="/blog/socialicons/youtube2.png">
     </a>
+
+
+
   </div>
 
     <div class="footer-copyright">
@@ -122,21 +125,6 @@
         });
       });
     });
-
-    document.querySelectorAll('.footer-social img').forEach(function(img){
-  // Ursprüngliche Quelle merken
-  const origSrc = img.src;
-  const altSrc = img.getAttribute('data-alt');
-  if(!altSrc) return; // Falls kein Alternativbild, überspringen
-
-  img.addEventListener('mouseenter', function(){
-    img.src = altSrc;
-  });
-  img.addEventListener('mouseleave', function(){
-    img.src = origSrc;
-  });
-});
-
   </script>
 </body>
 </html>
