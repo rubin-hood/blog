@@ -41,6 +41,11 @@ Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten personenbezo
 
 Für Fragen zum Thema Datenschutz können Sie sich jederzeit unter der oben angegebenen Adresse an mich wenden.
 
+### Hinweis zum Missbrauch der Kontaktdaten
+Der Nutzung der im Rahmen der Impressums- oder Datenschutzpflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. 
+
+Ich behalte mir rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.
+
 ### Änderungen dieser Datenschutzerklärung
 Ich behalte mir vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.
 
@@ -90,6 +95,11 @@ This website does not use external plugins or tools such as Google Analytics, so
 You have the right to request information at any time about your stored personal data, their origin and recipient, and the purpose of data processing. You also have the right to rectification, blocking, or deletion of these data.
 
 If you have any questions about data protection, you can contact me at the address provided above.
+
+### Notice Regarding Misuse of Contact Information
+The use of the contact details published as part of the legal notice (Impressum) or data protection declaration for the purpose of sending unsolicited advertising and information materials is hereby expressly prohibited.
+
+I reserve the right to take legal action in the event of unsolicited sending of advertising information, such as spam emails.
 
 ### Changes to this Privacy Policy
 I reserve the right to update this privacy policy from time to time to comply with current legal requirements.
