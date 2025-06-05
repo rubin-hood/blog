@@ -52,7 +52,7 @@ a:hover, a:focus {
   width: 32px;                           /* Breite eines Balkens */
   height: 4px;                           /* Höhe eines Balkens */
   background: #009C6C;                   /* Farbe der Balken (dein Akzent-Grün) */
-  border-radius: 2px;                    /* Leicht abgerundete Enden */
+  border-radius: 3px;                    /* Leicht abgerundete Enden */
   transition: all 0.3s cubic-bezier(.44,1.5,.5,1); /* Animation für Transformationen */
   display: block;                        /* Balken als Blockelement */
 }
@@ -190,11 +190,11 @@ nav#sidebar::before {
 .sidebar-post-item.active {
   background: transparent;      /* sanftes Grün als Beispiel */
   border-color: #009C6C;    /* Rahmen grün, falls du Border hast */
-  border-radius: 8px;       /* Ecken abgerundet, z.B. mit 8px */
+  border-radius: 7px;       /* Ecken abgerundet, z.B. mit 8px */
 }
 
 .sidebar-post-item.active .sidebar-post-title {
-  color: #ffffff;           /* Titel grün */
+  color: #333;           /* Titel grün */
   font-weight: 600;
 }
 
