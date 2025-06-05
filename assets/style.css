@@ -188,8 +188,8 @@ nav#sidebar::before {
 }
 
 .sidebar-post-item.active {
-  background: transparent;      /* sanftes Grün als Beispiel */
-  border-color: #009C6C;    /* Rahmen grün, falls du Border hast */
+  background: #FCFBF7;      /* sanftes Grün als Beispiel */
+  border: 3px solid #d7d7d7;;    /* Rahmen grün, falls du Border hast */
   border-radius: 7px;       /* Ecken abgerundet, z.B. mit 8px */
 }
 
