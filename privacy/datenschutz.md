@@ -2,10 +2,10 @@
 title: Datenschutzerklärung
 ---
 
-## Allgemeine Hinweise
+### Allgemeine Hinweise
 Der Schutz Ihrer persönlichen Daten ist mir ein wichtiges Anliegen. Diese Website erhebt und speichert **keine personenbezogenen Daten** und verwendet **keine Cookies** oder Analyse-Tools.
 
-## Verantwortlicher für die Datenverarbeitung
+### Verantwortlicher für die Datenverarbeitung
 Andreas Rubin  
 Berner Str. 1  
 70619 Stuttgart  
