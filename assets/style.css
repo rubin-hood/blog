@@ -188,7 +188,7 @@ nav#sidebar::before {
 }
 
 .sidebar-post-item.active {
-  background: #009C6C;      /* sanftes Grün als Beispiel */
+  background: transparent;      /* sanftes Grün als Beispiel */
   border-color: #009C6C;    /* Rahmen grün, falls du Border hast */
   border-radius: 8px;       /* Ecken abgerundet, z.B. mit 8px */
 }
@@ -410,7 +410,7 @@ img {
 /* Codeblock */
 
 pre {
-  background: #cecece;      /* Heller Hintergrund */
+  background: #dadada;      /* Heller Hintergrund */
   color: #202020;           /* Dunkle Schrift */
   padding: 1em;             /* Innenabstand */
   border-radius: 6px;       /* Abgerundete Ecken */
@@ -421,7 +421,7 @@ pre {
 }
 
 code {
-  background: #b7b7b7;      /* Leicht abweichender Hintergrund für Inline-Code */
+  background: #dadada;      /* Leicht abweichender Hintergrund für Inline-Code */
   color: #b42017;           /* Optional: Farbe für Inline-Code */
   padding: 0.2em 0.4em;     /* Etwas Innenabstand */
   border-radius: 3px;
