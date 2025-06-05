@@ -1,5 +1,6 @@
 ---
 date: 24.04.2025
+image: "/blog/images/Server-Infrastruktur-im-Ueberblick/001.svg"
 ---
 
 # 🧰 🛠️ Overview of Server Infrastructure
