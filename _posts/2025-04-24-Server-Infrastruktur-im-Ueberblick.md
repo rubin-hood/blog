@@ -4,7 +4,7 @@ date: 24.04.2025
 
 # 🧰 🛠️ Overview of Server Infrastructure
 
-![Alternativtext](../articles/Server-Infrastruktur-im-Ueberblick/001.svg)
+![Alternativtext](/blog/images/Server-Infrastruktur-im-Ueberblick/001.svg)
 
 Are you currently learning how modern IT infrastructures are built? Then this overview is exactly what you need.
 
