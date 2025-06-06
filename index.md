@@ -4,8 +4,8 @@ layout: default
 
 *Der digitale Wald, in dem Kreativität und Technologie aufeinander treffen.*
 
-# Welcome to my website showcasing my passion for IT projects.
+# Willkommen auf meiner Website, die meine Leidenschaft für IT-Projekte zeigt.
 
-This website is hosted on a **Raspberry Pi 5** running **PHP** to provide a modern and interactive experience. The complete source code is available in my [GitHub](https://github.com/rubin-hood/site) repository.
+Diese Website wird mit **Jekyll** erstellt und auf **GitHub Pages** gehostet, um eine moderne und interaktive Benutzererfahrung zu bieten. Der vollständige Quellcode ist in meinem [GitHub](https://github.com/rubin-hood/site)-Repository verfügbar.
 
-Many people find IT difficult to understand because much of its knowledge is complex or hard to access. Just like Robin Hood shared with everyone, Rubin-Hood shares IT knowledge in a simple way that anyone can understand. I want to help people learn about IT by making it clear and free for everyone - like a modern Robin Hood, but for tech knowledge.
+Viele Menschen finden IT schwer verständlich, da ein Großteil des Wissens komplex oder schwer zugänglich ist. So wie Robin Hood sein Wissen mit allen teilte, möchte Rubin Hood IT-Wissen auf einfache Weise vermitteln, sodass es jeder verstehen kann. Ich möchte Menschen dabei helfen, IT zu lernen, indem ich es klar und kostenlos zugänglich mache – wie ein moderner Robin Hood, aber für technisches Wissen.
