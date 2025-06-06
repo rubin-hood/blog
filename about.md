@@ -3,18 +3,18 @@ layout: default
 title: Home
 permalink: /about.html
 ---
-# Hello, I'm an IT enthusiast, problem solver, and tech whisperer.
+# Hallo, ich bin IT-Enthusiast, Problemlöser und Technikflüsterer.
 
-While others talk to their computer, I listen to it and tell you what it really means!
+Während andere mit ihrem Computer sprechen, höre ich ihm zu – und erkläre dir, was er wirklich sagen will!
 
-When others see 'Error 404', I see an exciting challenge!
+Wenn andere 'Error 404' sehen, sehe ich eine spannende Herausforderung!
 
-I transform computer language into human language, so that you too can understand what your computer is up to all day!
+Ich übersetze Computersprache in Menschensprache, damit auch du verstehst, womit dein Computer den ganzen Tag beschäftigt ist!
 
-Professionally, I have worked in various technical fields. In doing so, I have repeatedly found that access to technical knowledge is often unnecessarily complicated. This is exactly what I want to change with this website.
+Beruflich war ich in verschiedenen technischen Bereichen tätig. Dabei habe ich immer wieder festgestellt, dass der Zugang zu technischem Wissen oft unnötig kompliziert ist. Genau das möchte ich mit dieser Website ändern.
 
-With Rubin-Hood, I pursue the goal of making IT knowledge understandable and accessible so that everyone - whether beginner or professional - can benefit from it. I share my experiences, offer useful tips, and implement creative projects that show that technology can be not only complex but also exciting and accessible.
+Mit Rubin-Hood verfolge ich das Ziel, IT-Wissen verständlich und zugänglich zu machen, sodass jeder – ob Anfänger oder Profi – davon profitieren kann. Ich teile meine Erfahrungen, gebe nützliche Tipps und setze kreative Projekte um, die zeigen, dass Technologie nicht nur komplex, sondern auch spannend und greifbar sein kann.
 
-In my free time, I like to experiment with new technologies, develop my skills further, and am always looking for new challenges that help me and others progress.
+In meiner Freizeit experimentiere ich gerne mit neuen Technologien, bilde mich ständig weiter und suche nach neuen Herausforderungen, die mich und andere voranbringen.
 
-I look forward to sharing this journey with you and am excited to see where it takes us!
+Ich freue mich darauf, diese Reise mit dir zu teilen – und bin gespannt, wohin sie uns führen wird!
