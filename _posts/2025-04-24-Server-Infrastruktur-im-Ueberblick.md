@@ -4,7 +4,7 @@ title: 🧰 🛠️ Overview of Server Infrastructure
 image: "/blog/images/Server-Infrastruktur-im-Ueberblick/001.svg"
 ---
 
-![Alternativtext](/blog/images/Server-Infrastruktur-im-Ueberblick/001.svg)
+![Alternativtext](/blog/images/Server-Infrastruktur-im-Ueberblick/002.svg)
 
 Are you currently learning how modern IT infrastructures are built? Then this overview is exactly what you need.
 
