@@ -12,17 +12,3 @@ Der Raspberry Pi 5 ist ein leistungsstarker Einplatinencomputer, der sich hervor
 
 ## Voraussetzungen
 
-- Raspberry Pi 5
-- MicroSD-Karte (mindestens 8 GB, empfohlen 16 GB oder mehr)
-- MicroSD-Kartenleser
-- Stromversorgung für den Raspberry Pi 5
-- Ethernet-Kabel oder WLAN-Verbindung
-- Computer zum Schreiben des Images
-
-![](/blog/images/Raspberry-Pi-5/003.jpg)
-
-## Schritt 1: Raspberry Pi Imager herunterladen und installieren
-
-1. Besuchen Sie die offizielle Raspberry Pi-Website: https://www.raspberrypi.org/software/
-2. Laden Sie den "Raspberry Pi Imager" für Ihr Betriebssystem herunter.
-3. Installieren Sie den Raspberry Pi Imager auf Ihrem Computer.
