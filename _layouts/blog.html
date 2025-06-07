@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+</head>
+<body>
+  {% include header.html %}
+  <div class="flex-container">
+    <aside id="sidebar">
+      <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/logo.png" alt="Logo"></a>
+      <ul class="sidebar-posts">
+        {% for post in site.posts %}
+        <li class="sidebar-card {% if page.url == post.url %}active{% endif %}">
+          {% if post.image %}
+          <img src="{{ site.baseurl }}{{ post.image }}" alt="">
+          {% endif %}
+          <div>
+            <h4>{{ post.title | default: post.slug }}</h4>
+            <p>{{ post.excerpt | strip_html | truncate: 60 }}</p>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="button">Lesen</a>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </aside>
+    <main>
+      {{ content }}
+    </main>
+  </div>
+  {% include footer.html %}
+</body>
+</html>
