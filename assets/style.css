@@ -263,9 +263,10 @@ footer {
 /*--------*/
 .posts-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);   /* 3 Spalten auf Desktop */
   gap: 24px;
-  padding: 24px 0;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .post-card {
@@ -275,6 +276,10 @@ footer {
   padding: 16px;
   background: #fff;
   transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .post-card:hover {
   transform: translateY(-6px) scale(1.03);
@@ -282,27 +287,38 @@ footer {
 }
 .post-card img {
   width: 100%;
-  max-height: 120px;
+  max-height: 140px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 12px;
 }
 .post-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   margin: 0 0 8px 0;
+  color: #00936f;
+  font-weight: 700;
 }
 .post-card p {
   color: #444;
   font-size: 0.97rem;
   margin-bottom: 0;
+  flex-grow: 1;
 }
-@media (max-width: 900px) {
+.post-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+@media (max-width: 1100px) {
   .posts-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .posts-grid {
     grid-template-columns: 1fr;
   }
 }
+
