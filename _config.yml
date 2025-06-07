@@ -1,3 +1,2 @@
-title: Mein Blog
-theme: minima
-baseurl: "/blog"
+permalink: /:categories/:year/:month/:day/:title.html
+baseurl: "/blog"  # falls du in GitHub Pages unter /blog/ hostest!
