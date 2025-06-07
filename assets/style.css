@@ -24,6 +24,29 @@ header, nav, footer {
 }
 
 .header-logo {
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0 1em;
+}
+
+.site-nav a {
+  margin-right: 1em;
+}
+
+.site-social {
+  display: flex;
+  gap: 0.5em;
+}
+
+.site-social img {
+  height: 30px;
+}
+
+.site-logo img {
+  height: 30px;
   max-width: 120px;
   margin: 1em auto;
   display: block;
