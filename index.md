@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Willkommen!
 ---
 
 *Der digitale Wald, in dem Kreativität und Technologie aufeinander treffen.*

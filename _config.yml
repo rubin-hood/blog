@@ -1,2 +1,3 @@
 permalink: /:categories/:year/:month/:day/:title.html
-baseurl: "/blog"  # falls du in GitHub Pages unter /blog/ hostest!
+baseurl: "/blog"
+
