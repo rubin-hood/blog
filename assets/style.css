@@ -144,7 +144,7 @@ footer {
   border-radius: 6px;
   color: #009C6C;
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 12px;
 }
 
 .button:hover {
@@ -205,19 +205,19 @@ footer {
 
 .sidebar-card h4 {
   margin: 0;
-  font-size: 1em;
+  font-size: 14px;
   color: #009C6C;
 }
 
 .sidebar-card p {
   margin: 0.2em 0 0;
-  font-size: 0.8em;
+  font-size: 14px;
 }
 
 .sidebar-card .button {
   margin-top: 0.3em;
   padding: 0.2em 0.5em;
-  font-size: 0.75em;
+  font-size: 14px;
 }
 
 .flex-container main {
@@ -226,7 +226,7 @@ footer {
 }
 
 .post-date {
-  font-size: 0.9em;
+  font-size: 12px;
   color: #666;
 }
 
@@ -293,14 +293,14 @@ footer {
   margin-bottom: 12px;
 }
 .post-card h3 {
-  font-size: 1.15rem;
+  font-size: 14px;
   margin: 0 0 8px 0;
   color: #00936f;
   font-weight: 700;
 }
 .post-card p {
   color: #444;
-  font-size: 0.97rem;
+  font-size: 14px;
   margin-bottom: 0;
   flex-grow: 1;
 }
