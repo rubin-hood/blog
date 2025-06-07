@@ -19,9 +19,15 @@ h1, h2, h3 {
 }
 
 
-header, footer {
-  text-align: center;
+header {
   margin-bottom: 1.5em;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 2em;
+  padding: 1em 0;
 }
 
 .site-header {
@@ -33,15 +39,16 @@ header, footer {
 
 .site-nav {
   flex: 1;
+  text-align: center;
 }
 .site-nav a {
-  margin-right: 1em;
+  margin: 0 0.5em;
 }
 
 .site-social {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 0.5em;
 }
 
@@ -51,12 +58,13 @@ header, footer {
 
 .site-logo {
   flex: 1;
-  text-align: right;
+  text-align: left;
 }
 
 .site-logo img {
   height: 30px;
   max-width: 120px;
+
   margin: 1em 0;
 }
 
@@ -223,29 +231,8 @@ header, footer {
     order: 2;
   }
 }
-blog/index.md
-+14
--2
 
----
-layout: home
-layout: blog
-title: Blog
----
-# Mein Blog
-
-<div class="blog-list">
-{% for post in site.posts %}
-  <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-  <article class="blog-list-item">
-    {% if post.image %}
-    <img src="{{ site.baseurl }}{{ post.image }}" alt="">
-    {% endif %}
-    <div>
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | default: post.slug }}</a></h2>
-      <small>{{ post.date }}</small>
-      <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
-    </div>
-  </article>
-{% endfor %}
-</div>
+.site-footer {
+  font-size: 0.9em;
+  color: #666;
+}
