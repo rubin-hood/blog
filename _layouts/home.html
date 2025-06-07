@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+</head>
+<body>
+
+  <!-- Logo und Navigation wie gehabt -->
+
+  <main class="home-main">
+    <section class="hero">
+      {{ content }}
+    </section>
+    <section class="card-grid">
+      {% for post in site.posts limit:12 %}
+        <article class="card">
+          <a href="{{ post.url }}">
+            {% if post.image %}
+              <img src="{{ post.image }}" alt="{{ post.title }}">
+            {% endif %}
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+          </a>
+        </article>
+      {% endfor %}
+    </section>
+  </main>
+
+  <!-- Footer wie gehabt -->
+
+</body>
+</html>

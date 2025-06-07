@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 
 *Der digitale Wald, in dem Kreativität und Technologie aufeinander treffen.*
