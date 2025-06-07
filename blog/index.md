@@ -3,28 +3,5 @@ layout: blog
 title: Blog
 ---
 # Mein Blog
+
 Wähle einen Beitrag aus der Liste links, um mehr zu lesen.
-
-*Der digitale Wald, in dem Kreativität und Technologie aufeinander treffen.*
-
-# Willkommen auf meiner Website, die meine Leidenschaft für IT-Projekte zeigt.
-
-Diese Website wird mit [Jekyll](https://jekyllrb.com/), einem modernen Static-Site-Generator, erstellt und auf **GitHub Pages** gehostet, um eine moderne und interaktive Benutzererfahrung zu bieten. Der vollständige Quellcode ist in meinem [GitHub](https://github.com/rubin-hood/blog)-Repository verfügbar.
-
-Viele Menschen finden IT schwer verständlich, da ein Großteil des Wissens komplex oder schwer zugänglich ist. So wie Robin Hood sein Wissen mit allen teilte, möchte Rubin Hood IT-Wissen auf einfache Weise vermitteln, sodass es jeder verstehen kann. Ich möchte Menschen dabei helfen, IT zu lernen, indem ich es klar und kostenlos zugänglich mache – wie ein moderner Robin Hood, aber für technisches Wissen.
-## Neueste Beiträge
-
-<div class="portfolio-grid">
-{% for post in site.posts limit:6 %}
-  <article class="portfolio-card">
-    {% if post.image %}
-    <img src="{{ site.baseurl }}{{ post.image }}" alt="">
-    {% endif %}
-    <div class="card-content">
-      <h3>{{ post.title | default: post.slug }}</h3>
-      <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="button">Weiterlesen</a>
-    </div>
-  </article>
-{% endfor %}
-</div>
